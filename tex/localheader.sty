@@ -1,0 +1,223 @@
+%%%%%%%%%% font
+\usepackage[math-style=ISO,bold-style=ISO]{unicode-math}
+\setmainfont[Ligatures=TeX,
+             BoldFont={Roboto-Medium.ttf},
+             ItalicFont={Roboto-Italic.ttf},
+             BoldItalicFont={Roboto-MediumItalic.ttf},
+             Scale=0.9]{Roboto-Regular.ttf}
+\setsansfont[Ligatures=TeX,
+             BoldFont={Roboto-Medium.ttf},
+             ItalicFont={Roboto-Italic.ttf},
+             BoldItalicFont={Roboto-MediumItalic.ttf},
+             Scale=0.9]{Roboto-Regular.ttf}
+\setmathfont[Scale=0.9]{FiraMath-Regular.otf}
+\setmathfont[range=up/num]{Roboto-Regular.ttf}
+\setmathfont[range=it/{Latin,latin,Greek,greek}]{Roboto-Italic.ttf}
+
+%\usepackage{newtxtext,newtxmath}\DeclareMathSizes{\@xipt}{\@xipt}{7}{5}
+\usepackage{tikz}
+\usepackage[italian]{babel}
+\usepackage{datetime}
+\usepackage{booktabs}
+\usepackage{setspace}
+%\usepackage{concmath}\DeclareMathSizes{10}{10}{8}{7}
+%\usepackage{helvet}
+\usepackage[labelformat=empty,font={sf},
+            justification=centering,margin=1cm]{caption}
+\usepackage{quoting}
+
+\definecolor{greenbg}{RGB}{181,213,138}
+\definecolor{greenfg}{RGB}{71,104,75}
+
+%%%%%%%%%% impostazioni beamer
+\mode<beamer>{\usefonttheme{serif}\usecolortheme{default}}
+\setbeamertemplate{blocks}[rounded]
+\setbeamerfont{title}{size=\Huge,family=\sffamily,series=\bfseries}
+\setbeamerfont{subtitle}{size=\Large,family=\sffamily,series=\bfseries}
+\setbeamercolor{subtitle}{fg=white!10!black}
+\setbeamercolor{datetime}{fg=white!50!black}
+\setbeamerfont{author}{size=\large,family=\sffamily,series=\bfseries}
+\setbeamerfont{date}{size=\normalsize,family=\sffamily,series=\mdseries}
+\setbeamerfont{institute}{size=\normalsize,family=\sffamily,series=\mdseries}
+\setbeamercolor{box}{fg=blue,bg=blue!30!white}
+% \setbeamercolor{frametitle}{fg=blue}
+% \setbeamerfont{frametitle}{size={\fontsize{12}{14}},family=\rmfamily}
+\setbeamerfont{frametitle}{size={\fontsize{12}{14}},family=\sffamily,series=\bfseries}
+\setbeamercolor{frametitle}{fg=black,bg=greenbg}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries,family=\sffamily}
+\setbeamercolor{block title}{use=structure,fg=black,bg=greenbg}
+\setbeamercolor{block body}{use=structure,fg=black,bg=black!10!white}
+\setbeamercolor{alerted text}{fg=blue} 
+\setbeamersize{description width of={xxxx}}
+\setbeamercolor*{description item}{fg=blue!90!white}
+%\setbeamerfont{caption}{size=\footnotesize,family=\sffamily}
+
+%%%%%%%%% section page
+\setbeamerfont{section title}{parent=title,size=\huge}
+\setbeamercolor{section title}{parent=titlelike,fg=blue!50!black}
+
+\setbeamertemplate{frametitle}{
+  \leavevmode
+  \hbox{\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{frametitle}
+  \usebeamerfont{frametitle}
+  \insertframetitle
+  %\topline
+  \end{beamercolorbox}
+}}
+
+\setbeamertemplate{section page}{
+ \begin{center}
+    \begin{beamercolorbox}[sep=8pt,center]{section title}
+      \usebeamerfont{section title}
+      \insertsection\par
+    \end{beamercolorbox}
+ \end{center}
+}
+\renewcommand{\sectionpage}{\usebeamertemplate{section page}}
+\AtBeginSection[]{
+\begingroup
+\setbeamertemplate{footline}{}
+\setbeamercolor{background canvas}{bg=greenbg}
+\frame{\sectionpage}
+\endgroup
+}
+
+%%%%%%%%%% footer
+\beamertemplatenavigationsymbolsempty
+\setbeamerfont{footer}{size={\fontsize{6}{8}},family=\sffamily}
+\setbeamercolor{section in head/foot}{fg=black,bg=greenbg}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.22\paperwidth,ht=2ex,dp=1.25ex,left]{section in head/foot}%
+    \usebeamerfont{footer}\hspace{1mm}\insertdate
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2ex,dp=1.25ex,center]{section in head/foot}%
+    \usebeamerfont{footer}\insertauthor\hspace{6pt}|\hspace{6pt}\insertsubtitle\hspace{6pt}|\hspace{6pt}\insertshortinstitute
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.18\paperwidth,ht=2ex,dp=1.25ex,right]{section in head/foot}%
+    \usebeamerfont{footer}\thepage\ / \inserttotalframenumber\hspace{1mm} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+%%%%%%%%%%% title page
+\defbeamertemplate*{title page}{customized}[1][]
+{
+  \vspace*{3.8cm}
+  \begin{minipage}[t][3cm]{\textwidth}
+  \usebeamercolor[fg]{title}\usebeamerfont{title}\inserttitle\par
+  \end{minipage}
+  \vfill
+  \begin{minipage}{.4\textwidth}
+  \usebeamercolor[fg]{subtitle}\usebeamerfont{author}\insertauthor\\
+  \usebeamerfont{institute}\insertinstitute
+  \end{minipage}\hfill
+  \begin{minipage}{.4\textwidth}\begin{flushright}
+  \usebeamercolor[fg]{subtitle}\usebeamerfont{author}Scienza delle finanze\\
+  \usebeamerfont{date}\insertdate
+  \end{flushright}
+  \end{minipage}
+}
+\renewcommand{\maketitle}{
+\begingroup
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=4cm]{immagine-copertina.png}}
+\setbeamertemplate{footline}{\usebeamercolor[fg]{datetime}\usebeamerfont{footer}\hspace{2mm}Ultimo
+  aggiornamento: \today~--~\currenttime}
+\frame{\titlepage}
+\endgroup
+}
+
+%%%%%%%%%% comandi nuovi e rinnovati
+\newcommand{\dparz}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\tparz}[2]{{\partial #1}/{\partial #2}}
+\renewcommand{\textbf}{\alert}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+
+\newcommand{\topline}{%
+  \tikz[remember picture,overlay] {%
+    \draw[red!80!black] ([yshift=-0.7cm]current page.north west)
+             -- ([yshift=-0.7cm,xshift=\paperwidth]current page.north west);}}
+
+\setlength{\leftmargini}{1.25em} 
+\setlength{\leftmarginii}{1em}
+\setbeamersize{text margin left=8mm, text margin right=8mm}
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{3pt}
+  \setlength\belowdisplayskip{3pt}
+  \setlength\abovedisplayshortskip{1pt}
+  \setlength\belowdisplayshortskip{1pt}
+}
+
+% \newlength{\wideitemsep}
+% \setlength{\wideitemsep}{\itemsep}
+% \addtolength{\wideitemsep}{0pt}
+% \let\olditem\item
+% \renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+
+\usepackage{bookmark}
+% includere frame title nei bookmark pdf
+% https://tex.stackexchange.com/a/17233
+%\makeatletter
+% save the current definition of \beamer@@frametitle
+\let\nobookmarkbeamer@@frametitle\beamer@@frametitle
+% then patch it to do the bookmarks and/or TOC entries
+\apptocmd{\beamer@@frametitle}{%
+  % keep this to add the frame title to the TOC at the "subsection level"
+  \addtocontents{toc}{\protect\beamer@subsectionintoc{\the\c@section}{0}{#1}{\the\c@page}{\the\c@part}%
+        {\the\beamer@tocsectionnumber}}%
+  % keep this line to add a bookmark that shows up in the PDF TOC at the subsection level
+  \bookmark[page=\the\c@page,level=3]{#1}%
+  }%
+  {\message{** patching of \string\beamer@@frametitle succeeded **}}%
+  {\errmessage{** patching of \string\beamer@@frametitle failed **}}%
+
+\pretocmd{\beamer@checknoslide}{%
+  % ensure the bookmark is not created if the slide is filtered out
+  \let\beamer@@frametitle\nobookmarkbeamer@@frametitle
+  }%
+  {\message{** patching of \string\beamer@checknoslide succeeded **}}%
+  {\errmessage{** patching of \string\beamer@checknoslide failed **}}%
+
+%\makeatother
+
+
+
+\newcommand\ChangeItemFont[3]{%
+\renewcommand{\itemize}[1][]{%
+  \beamer@ifempty{##1}{}{\def\beamer@defaultospec{#1}}%
+  \ifnum \@itemdepth >2\relax\@toodeep\else
+    \advance\@itemdepth\@ne
+    \beamer@computepref\@itemdepth% sets \beameritemnestingprefix
+    \usebeamerfont{itemize/enumerate \beameritemnestingprefix body}%
+    \usebeamercolor[fg]{itemize/enumerate \beameritemnestingprefix body}%
+    \usebeamertemplate{itemize/enumerate \beameritemnestingprefix body begin}%
+    \list
+      {\usebeamertemplate{itemize \beameritemnestingprefix item}}
+      {\def\makelabel####1{%
+          {%
+            \hss\llap{{%
+                \usebeamerfont*{itemize \beameritemnestingprefix item}%
+                \usebeamercolor[fg]{itemize \beameritemnestingprefix item}####1}}%
+          }%
+        }%
+  \ifnum\@itemdepth=1\relax
+    #1%
+  \else
+  \ifnum\@itemdepth=2\relax
+    #2%
+  \else
+  \ifnum\@itemdepth=3\relax
+    #3%
+  \fi%
+  \fi%
+  \fi%
+  }
+  \fi%
+  \beamer@cramped%
+  \raggedright%
+  \beamer@firstlineitemizeunskip%
+}}
