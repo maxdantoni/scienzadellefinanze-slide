@@ -1,12 +1,12 @@
 # Slide per il testo "Scienza delle finanze"
 
-In questa respository sono disponibili i file per le slide del testo:
+In questa respository sono disponibili le slide, con relativi file sorgente, per il testo:
 
 * G. Arachi e M. D'Antoni, *Scienza delle finanze*, Il Mulino, Bologna, 2023. 
 
-Le slide sono in formato PDF e nella presente repository sono disponibili i file sorgente LaTeX/Beamer per modificarle e compilarle, nonché le figure.
+Le slide sono in formato PDF mentre i file sorgente sono in formato LaTeX/Beamer. Sono presenti anche le figure, nei formati PDF, JPEG e PNG.
 
-Il materiale didattico, creato da Massimo D'Antoni, è rilasciato con licenza BSD (Clause 3), dunque è possibile per chiunque scaricarle, modificarle e utilizzarle a proprio piacimento. L'unica condizione è quella di menzionare l'autore originale.
+Il materiale didattico, creato da Massimo D'Antoni, è rilasciato con licenza BSD (Clause 3), dunque è possibile per chiunque scaricarlo, modificarlo e utilizzarlo a proprio piacimento. L'unica condizione è quella di menzionare l'autore originale.
 
 ## Compilazione
 
