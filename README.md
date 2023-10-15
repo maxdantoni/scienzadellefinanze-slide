@@ -2,7 +2,7 @@
 
 In questa respository sono disponibili i file per le slide del testo:
 
-   G. Arachi e M. D'Antoni, *Scienza delle finanze*, Il Mulino, Bologna, 2023. 
+* G. Arachi e M. D'Antoni, *Scienza delle finanze*, Il Mulino, Bologna, 2023. 
 
 Le slide sono in formato PDF e nella presente repository sono disponibili i file sorgente LaTeX/Beamer per modificarle e compilarle, nonché le figure.
 
