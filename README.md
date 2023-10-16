@@ -14,4 +14,15 @@ Per compilare è necessario disporre di un'installazione LaTeX. I file sono pred
 
 Per utilizzare pdfLaTeX è necessario modificare i comandi nel file localheader.sty
 
+## Modifiche e personalizzazioni
+
+In ciascun file sono indicati, e possono essere personalizzati, i seguenti campi:
+
+    \author{...}
+    \date{...}  % qui indico l'anno accademico
+    \title{...} 
+    \subtitle{...}  % qui metto la denominazione dell'insegnamento
+    \institute{...}
+
+
 
