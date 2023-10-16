@@ -10,9 +10,17 @@ Il materiale didattico, creato da Massimo D'Antoni, è rilasciato con licenza BS
 
 ## Compilazione
 
-Per compilare è necessario disporre di un'installazione LaTeX. I file sono predisposti per essere compilati con XeLaTeX oppure con LuaLaTeX, "motori" che leggono i caratteri Unicode e consentono di utilizzare i font OpenType e TrueType (per la creazione dei PDF sono stati utilizzati i font [Roboto](https://fonts.google.com/specimen/Roboto)). Chi non avesse tali font installati nel proprio sistema può impostare altri font TrueType (es. Calibri o Arial) modificando il file localheader.sty.
+Per compilare è necessario disporre di un'installazione LaTeX. I file sono predisposti per essere compilati con XeLaTeX oppure con LuaLaTeX, "motori" che leggono i caratteri Unicode e consentono di utilizzare i font OpenType e TrueType (per la creazione dei PDF sono stati utilizzati i font [Roboto](https://fonts.google.com/specimen/Roboto)). Chi non avesse tali font installati nel proprio sistema può impostare altri font TrueType (es. Calibri o Arial) modificando il file `localheader.sty`.
 
-Per utilizzare pdfLaTeX è necessario modificare i comandi nel file localheader.sty
+Per utilizzare pdfLaTeX è necessario modificare il `localheader.sty`, rimuovendo i comandi: 
+
+    \usepackage[...]{unicode-math}
+    \setmainfont...
+	\setsansfont...
+	\setmathfont...
+
+e sostituendoli con i pacchetti specifici dei font desiderati.
+
 
 ## Modifiche e personalizzazioni
 
