@@ -1,4 +1,7 @@
 %%%%%%%%%% font
+\usepackage{iftex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi>0
+%% font se utilizzato xetex e luatex
 \usepackage[math-style=ISO,bold-style=ISO]{unicode-math}
 \setmainfont[Ligatures=TeX,
              BoldFont={Roboto-Medium.ttf},
@@ -13,24 +16,22 @@
 \setmathfont[Scale=0.9]{FiraMath-Regular.otf}
 \setmathfont[range=up/num]{Roboto-Regular.ttf}
 \setmathfont[range=it/{Latin,latin,Greek,greek}]{Roboto-Italic.ttf}
+\fi
+\ifpdftex
+%% font se pdftex
+\usepackage[sfdefault,scaled=.9]{notomath}
+\usepackage[utf8]{inputenc}
+\fi
 
-%\usepackage{newtxtext,newtxmath}\DeclareMathSizes{\@xipt}{\@xipt}{7}{5}
-\usepackage{tikz}
-\usepackage[italian]{babel}
-\usepackage{datetime}
-\usepackage{booktabs}
-\usepackage{setspace}
-%\usepackage{concmath}\DeclareMathSizes{10}{10}{8}{7}
-%\usepackage{helvet}
 \usepackage[labelformat=empty,font={sf},
             justification=centering,margin=1cm]{caption}
-\usepackage{quoting}
-
+\usepackage{datetime}
+            
 \definecolor{greenbg}{RGB}{181,213,138}
 \definecolor{greenfg}{RGB}{71,104,75}
 
 %%%%%%%%%% impostazioni beamer
-\mode<beamer>{\usefonttheme{serif}\usecolortheme{default}}
+%\mode<beamer>{\usefonttheme{serif}\usecolortheme{default}}
 \setbeamertemplate{blocks}[rounded]
 \setbeamerfont{title}{size=\Huge,family=\sffamily,series=\bfseries}
 \setbeamerfont{subtitle}{size=\Large,family=\sffamily,series=\bfseries}
