@@ -21,9 +21,7 @@ Per la compilazione è necessario disporre di un'installazione LaTeX che compren
 
 ## Modifiche e personalizzazioni
 
-I file utilizzano la classe [beamer](https://ctan.org/pkg/beamer), un formato che si è affermato come standard nella creazione di presentazioni in ambiente LaTeX. 
-
-La modifica del testo non richiede tuttavia una conoscenza di tale formato, è sufficiente una conoscenza di base della sintassi LaTeX. Nella maggior parte dei casi sarà sufficiente intervenire modificando il testo esistente.
+I file `.tex`, che contengono il testo delle slide, utilizzano [beamer](https://ctan.org/pkg/beamer), un formato che si è affermato come standard nella creazione di presentazioni in ambiente LaTeX.  La modifica del testo non richiede tuttavia la padronanza di tale formato, è sufficiente una conoscenza di base della sintassi LaTeX. Nella maggior parte dei casi sarà sufficiente intervenire modificando il testo esistente.
 
 In ciascun file sono impostati alcuni dati relativi al docente, all'insegnamento, all'università e all'anno accademico, che possono essere personalizzati modificando gli argomenti dei seguenti comandi:
 
