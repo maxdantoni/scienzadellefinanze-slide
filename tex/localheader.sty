@@ -16,6 +16,8 @@
 \setmathfont[Scale=0.9]{FiraMath-Regular.otf}
 \setmathfont[range=up/num]{Roboto-Regular.ttf}
 \setmathfont[range=it/{Latin,latin,Greek,greek}]{Roboto-Italic.ttf}
+\usepackage{newunicodechar}
+\newunicodechar{→}{$\to$}
 \fi
 \ifpdftex
 %% font se pdftex
@@ -98,7 +100,7 @@
     \usebeamerfont{footer}\insertauthor\hspace{6pt}|\hspace{6pt}\insertsubtitle\hspace{6pt}|\hspace{6pt}\insertshortinstitute
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.18\paperwidth,ht=2ex,dp=1.25ex,right]{section in head/foot}%
-    \usebeamerfont{footer}\thepage\ / \inserttotalframenumber\hspace{1mm} 
+    \usebeamerfont{footer}\insertframenumber\ / \inserttotalframenumber\hspace{1mm} 
   \end{beamercolorbox}}%
   \vskip0pt%
 }
