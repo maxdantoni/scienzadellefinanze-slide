@@ -1,6 +1,6 @@
-* BSD 3-clause Licence
+# BSD 3-clause Licence
 
-Copyright (c) 2023, Massimo Andrea D'Antoni
+Copyright (c) 2023, Massimo Andrea D'Antoni  
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -27,9 +27,9 @@ The views and conclusions contained in the software and documentation are those
 of the authors and should not be interpreted as representing official policies, 
 either expressed or implied, of the FreeBSD Project.
 
-* Licenza BSD con 3 clausole
+# Licenza BSD con 3 clausole
 
-Copyright (c) 2023, Massimo Andrea D'Antoni
+Copyright (c) 2023, Massimo Andrea D'Antoni  
 All rights reserved.
 
 La ridistribuzione e l'uso in forma di codice sorgente e binaria, con o senza modifiche, sono permesse purché siano rispettate le seguenti condizioni:
