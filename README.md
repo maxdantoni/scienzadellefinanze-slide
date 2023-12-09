@@ -6,7 +6,7 @@ In questa respository sono disponibili le slide, con relativi file sorgente, per
 
 Le slide sono in formato PDF mentre i file sorgente sono in formato LaTeX/Beamer. Sono presenti anche le figure, nei formati PDF, JPEG e PNG.
 
-Il materiale didattico, creato da Massimo D'Antoni, è rilasciato con licenza BSD (Clause 3), dunque è possibile per chiunque scaricarlo, modificarlo e utilizzarlo a proprio piacimento. L'unica condizione è quella di menzionare l'autore originale.
+Il materiale didattico, creato da Massimo D'Antoni, è rilasciato con [licenza FreeBSD](licenza.md), dunque è possibile per chiunque scaricarlo, modificarlo e utilizzarlo a proprio piacimento. L'unica condizione è quella di menzionare l'autore originale.
 
 ## Compilazione
 
