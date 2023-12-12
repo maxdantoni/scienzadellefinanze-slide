@@ -35,6 +35,10 @@
 %%%%%%%%%% impostazioni beamer
 %\mode<beamer>{\usefonttheme{serif}\usecolortheme{default}}
 \setbeamertemplate{blocks}[rounded]
+
+\useinnertheme[rounded,titlepage=false]{tcolorbox}
+\tcbsetforeverylayer{frame style={draw=greenfg,line width=.5mm}}
+
 \setbeamerfont{title}{size=\Huge,family=\sffamily,series=\bfseries}
 \setbeamerfont{subtitle}{size=\Large,family=\sffamily,series=\bfseries}
 \setbeamercolor{subtitle}{fg=white!10!black}
@@ -48,8 +52,8 @@
 \setbeamerfont{frametitle}{size={\fontsize{12}{14}},family=\sffamily,series=\bfseries}
 \setbeamercolor{frametitle}{fg=black,bg=greenbg}
 \setbeamerfont{block title}{size=\normalsize,series=\bfseries,family=\sffamily}
-\setbeamercolor{block title}{use=structure,fg=black,bg=greenbg}
-\setbeamercolor{block body}{use=structure,fg=black,bg=black!10!white}
+\setbeamercolor{block title}{use=structure,fg=red,bg=black!7!white}
+\setbeamercolor{block body}{use=structure,fg=black,bg=black!7!white}
 \setbeamercolor{alerted text}{fg=blue} 
 \setbeamersize{description width of={xxxx}}
 \setbeamercolor*{description item}{fg=blue!90!white}
@@ -191,38 +195,71 @@
 
 
 
-\newcommand\ChangeItemFont[3]{%
-\renewcommand{\itemize}[1][]{%
-  \beamer@ifempty{##1}{}{\def\beamer@defaultospec{#1}}%
-  \ifnum \@itemdepth >2\relax\@toodeep\else
-    \advance\@itemdepth\@ne
-    \beamer@computepref\@itemdepth% sets \beameritemnestingprefix
-    \usebeamerfont{itemize/enumerate \beameritemnestingprefix body}%
-    \usebeamercolor[fg]{itemize/enumerate \beameritemnestingprefix body}%
-    \usebeamertemplate{itemize/enumerate \beameritemnestingprefix body begin}%
-    \list
-      {\usebeamertemplate{itemize \beameritemnestingprefix item}}
-      {\def\makelabel####1{%
-          {%
-            \hss\llap{{%
-                \usebeamerfont*{itemize \beameritemnestingprefix item}%
-                \usebeamercolor[fg]{itemize \beameritemnestingprefix item}####1}}%
-          }%
-        }%
-  \ifnum\@itemdepth=1\relax
-    #1%
-  \else
-  \ifnum\@itemdepth=2\relax
-    #2%
-  \else
-  \ifnum\@itemdepth=3\relax
-    #3%
-  \fi%
-  \fi%
-  \fi%
-  }
-  \fi%
-  \beamer@cramped%
-  \raggedright%
-  \beamer@firstlineitemizeunskip%
-}}
+% \newcommand\ChangeItemFont[3]{%
+% \renewcommand{\itemize}[1][]{%
+%   \beamer@ifempty{##1}{}{\def\beamer@defaultospec{#1}}%
+%   \ifnum \@itemdepth >2\relax\@toodeep\else
+%     \advance\@itemdepth\@ne
+%     \beamer@computepref\@itemdepth% sets \beameritemnestingprefix
+%     \usebeamerfont{itemize/enumerate \beameritemnestingprefix body}%
+%     \usebeamercolor[fg]{itemize/enumerate \beameritemnestingprefix body}%
+%     \usebeamertemplate{itemize/enumerate \beameritemnestingprefix body begin}%
+%     \list
+%       {\usebeamertemplate{itemize \beameritemnestingprefix item}}
+%       {\def\makelabel####1{%
+%           {%
+%             \hss\llap{{%
+%                 \usebeamerfont*{itemize \beameritemnestingprefix item}%
+%                 \usebeamercolor[fg]{itemize \beameritemnestingprefix item}####1}}%
+%           }%
+%         }%
+%   \ifnum\@itemdepth=1\relax
+%     #1%
+%   \else
+%   \ifnum\@itemdepth=2\relax
+%     #2%
+%   \else
+%   \ifnum\@itemdepth=3\relax
+%     #3%
+%   \fi%
+%   \fi%
+%   \fi%
+%   }
+%   \fi%
+%   \beamer@cramped%
+%   \raggedright%
+%   \beamer@firstlineitemizeunskip%
+% }}
+
+\usepackage{xpatch}
+% \xpatchcmd{\itemize}{\def\makelabel}
+%   {\addtolength{\itemsep}{-.5ex}%
+%     \def\makelabel%
+%   }{}{}
+% \BeforeBeginEnvironment{itemize}{\vskip-1ex}
+
+\makeatletter
+\newlength{\my@beamer@itemsepi}\setlength{\my@beamer@itemsepi}{.5ex}
+\newlength{\my@beamer@itemsepii}\setlength{\my@beamer@itemsepii}{.25ex}
+\newlength{\my@beamer@itemsepiii}\setlength{\my@beamer@itemsepiii}{.25ex}
+\newcommand{\my@beamer@setsep}{%
+\ifnum\@itemdepth=1\relax
+     \setlength\itemsep{\my@beamer@itemsepi}% separation for first level
+   \else
+     \ifnum\@itemdepth=2\relax
+       \setlength\itemsep{\my@beamer@itemsepii}% separation for second level
+       % \setlength\topsep{\my@beamer@itemsepi}% separation for second level
+     \else
+       \ifnum\@itemdepth=3\relax
+         \setlength\itemsep{\my@beamer@itemsepiii}% separation for third level
+         % \setlength\topsep{\my@beamer@itemsepii}% separation for second level
+   \fi\fi\fi}
+\xpatchcmd{\itemize}
+  {\def\makelabel}{\my@beamer@setsep\def\makelabel}{}{}
+\xpatchcmd{\beamer@enum@}
+  {\def\makelabel}{\my@beamer@setsep\def\makelabel}{}{}
+\newcommand\setlistsep[3]{%
+    \setlength{\my@beamer@itemsepi}{#1}%
+    \setlength{\my@beamer@itemsepii}{#2}%
+    \setlength{\my@beamer@itemsepiii}{#3}%
+}
