@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[11pt,italian]{beamer}
+\documentclass[aspectratio=149,11pt,italian]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -145,7 +145,7 @@ transazioni tra imprese).
 \begin{frame}{L'imposta sul valore aggiunto: metodi di calcolo}
 Due metodi per la determinazione della base imponibile:
 \begin{itemize}
-\item \alert{Base da base (\emph{subtraction method})}.
+\item \textbf{Base da base (\emph{subtraction method})}.
 \begin{itemize}
 \item L'imposta non si applica alle singole transazioni, ma al valore aggiunto
 complessivo (differenza tra totale vendite e totale acquisti) dei soggetti
@@ -155,7 +155,7 @@ remunerazione complessiva dei fattori.
 \item L'aliquota è definita \alert{su base lorda}.
 \end{itemize}
 
-\item \alert{Imposta da imposta (\emph{invoice credit method})}.
+\item \textbf{Imposta da imposta (\emph{invoice credit method})}.
 \begin{itemize}
 \item L'imposta è calcolata su ogni singola transazione. In fattura sono
 indicati prezzo netto, imposta e prezzo lordo.
@@ -186,34 +186,28 @@ formula che evidenzia l'assenza di effetti «cumulativi».
 \begin{equation*}
   T^{BB} = t\,q_C = \frac{t}{1-t}(A + B+ C).
 \end{equation*}
-per cui l'aliquota effettiva è $t/(1-t)$, aliquota «su base netta»
-corrispondente all'aliquota legale «su base lorda» $t$.
+per cui l'aliquota effettiva è $t/(1-t)$, aliquota \emph{su base netta}
+corrispondente all'aliquota legale \emph{su base lorda} $t$.
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'imposta sul valore aggiunto col metodo base da base: esempio}
-\begin{itemize}
-\item Con aliquota uniforme $t=20\%$:
-\begin{center}
-\includegraphics[width=.8\textwidth]{./figure/esempio-base-da-base-aliquota-uniforme.png}
-\end{center}
-\begin{itemize}
-\item L'imposta complessiva è 75€, dunque l'aliquota effettiva su base lorda è
-$75/375=20\%$, quella su base netta è $75/300=25\%$.
-\end{itemize}
-
-\item Se l'aliquota non è uniforme (es. 20\% nelle fasi di produzione e ingrosso,
-10\% al dettaglio):
-\begin{center}
-\includegraphics[width=.8\textwidth]{./figure/esempio-base-da-base-aliquota-differenziata.png}
-\end{center}
-\begin{itemize}
-\item L'imposta complessiva è 61,1€, l'aliquota effettiva su base \emph{lorda} è
-$61,1/361,1=16,92\%$, maggiore dell'aliquota pagata dal consumatore
-finale. L'aliquota effetti va su base netta è $61,1/361,1=20,36\%$.
-\end{itemize}
-\end{itemize}
+  \vspace*{-3.5mm}\footnotesize
+  \begin{block}{}
+    \textbf{Aliquota uniforme:} 20\%\\
+    \includegraphics[width=.8\textwidth]{./figure/esempio-base-da-base-aliquota-uniforme.png}\\
+    L'imposta complessiva è 75€, dunque l'aliquota effettiva su base lorda
+    è $75/375=20\%$, quella su base netta è $75/300=25\%$.
+  \end{block}
+  \begin{block}{}
+    \textbf{Aliquota differenziata:} 20\% nelle fasi di produzione e ingrosso, 10\% al
+      dettaglio\\
+      \includegraphics[width=.8\textwidth]{./figure/esempio-base-da-base-aliquota-differenziata.png}\\
+    L'imposta complessiva è 61,1€, l'aliquota effettiva su base \emph{lorda} è
+    61,1/361,1=16,92\%, maggiore dell'aliquota pagata dal consumatore
+    finale. L'aliquota effettiva su base netta è 61,1/361,1=20,36\%.
+  \end{block}
 \end{frame}
 
 
@@ -248,35 +242,28 @@ dunque:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'imposta sul valore aggiunto col metodo imposta da imposta: esempio}
-\begin{itemize}
-\item Con aliquota uniforme $\tau=25\%$ (corrispondente a un'aliquota su base
-lorda del 20\%):
-\begin{center}
-\includegraphics[width=\textwidth]{./figure/esempio-imposta-da-imposta-1.png}
-\end{center}
-\begin{itemize}
-\item L'imposta complessiva è 75€, l'aliquota effettiva è: $75/300=25\%$,
+\begin{block}{}
+\textbf{Con aliquota uniforme} $\tau=25\%$\\(corrispondente a un'aliquota su base
+lorda del 20\%):\\
+\includegraphics[width=\textwidth]{./figure/esempio-imposta-da-imposta-1.png}\\
+L'imposta complessiva è 75€, l'aliquota effettiva è: $75/300=25\%$,
 esattamente come nel precedente esempio di applicazione del metodo base da
 base
-\end{itemize}
-\end{itemize}
+\end{block}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'imposta sul valore aggiunto col metodo imposta da imposta: esempio}
-\begin{itemize}
-\item Con aliquota differenziata: \$$\tau$\textsubscript{A}=$\tau$\textsubscript{B}$=25\%$ e $\tau_C=11,1\%$
-(quest'ultima corrisponde a un'aliquota su base lorda del 10\%)
-\begin{center}
-\includegraphics[width=\textwidth]{./figure/esempio-imposta-da-imposta-2.png}
-\end{center}
-\begin{itemize}
-\item Il dettagliante ha diritto al rimborso dell'IVA pagata al grossista in
+\begin{block}{}
+\item \textbf{Con aliquota differenziata} $\tau_A=\tau_B=25\%$ e $\tau_C=11,1\%$\\
+(quest'ultima corrisponde a un'aliquota su base lorda del 10\%)\\
+\includegraphics[width=\textwidth]{./figure/esempio-imposta-da-imposta-2.png}\\
+Il dettagliante ha diritto al rimborso dell'IVA pagata al grossista in
 eccesso sull'IVA a debito.
-\item L'imposta complessiva è 33,3€, l'aliquota effettiva è: $33,3/300=11,1\%$.
-\end{itemize}
-\end{itemize}
+
+L'imposta complessiva è 33,3€, l'aliquota effettiva è: $33,3/300=11,1\%$.
+\end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -567,16 +554,21 @@ potenziamento dell'attività di contrasto in tale fase
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Imposte indirette: classificazione amministrativa e gettito (2018)}
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=6cm]{./figure/imposte-indirette-2018.png}
-\end{figure}
+  \begin{columns}
+    \begin{column}{.7\columnwidth}
+      \begin{figure}[htbp]
+        \vspace*{-5mm}
+        \includegraphics[height=7cm]{./figure/imposte-indirette-2018.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{.3\columnwidth}
+      Si tratta di un insieme molto eterogeneo di imposte.
+      \bigskip
 
-\begin{itemize}
-\item Si tratta di un insieme molto eterogeneo di imposte.
-\item Alcune di esse sono anacronistiche, hanno elevati costi amministrativi ed un
-gettito limitato.
-\end{itemize}
+      Alcune di esse sono anacronistiche, hanno elevati costi amministrativi e un
+      gettito limitato.
+    \end{column}
+  \end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -613,56 +605,144 @@ scommesse, \emph{slot machine}, giochi d'azzardo on-line)
 \section{Il coordinamento internazionale}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame} le imposte non dovrebbero distorcere
-i flussi commerciali e la concorrenza.
-\begin{description}
-\item[{Ripartizione del gettito tra paesi:}] problemi di doppia
-imposizione, nel paese di origine e di destinazione della merce.
-\end{description}
+\begin{frame}{Problemi di coordinamento internazionale}
 
-Al fine di evitare il problema della doppia tassazione, è possibile
-in linea di principio applicare uno dei seguenti due principi:
-\begin{description}
-\item[{Principio di origine:}] il bene è assoggettato ad Iva nel paese in cui è
-prodotto (paese esportatore), e non subisce tassazione al passaggio della
-frontiera
-\item[{Principio di destinazione:}] l'imposta è applicata dal paese di
-destinazione, ove il bene è consumato.  All'esportazione il bene viene
-dunque "depurato" dell'Iva pagata fino a quel momento, mentre viene
-applicata l'Iva ai beni importati.  È il principio applicato in Europa.
-\end{description}
+  \begin{itemize}
+  \item \alert{Neutralità:} La imposte non dovrebbero distorcere i flussi
+    commerciali e la concorrenza.
+  \item \alert{Ripartizione del gettito tra paesi:} problemi di doppia
+    imposizione, nel paese di origine e di destinazione della merce.
+  \end{itemize}
+
+  Al fine di evitare il problema della doppia tassazione, è possibile
+  in linea di principio applicare uno dei seguenti due principi:
+  \begin{block}{Principio di origine.} Il bene è assoggettato a Iva nel paese
+    in cui è prodotto (paese esportatore), e non subisce tassazione al
+    passaggio della frontiera
+\end{block}
+\begin{block}{Principio di destinazione.} L'imposta è applicata dal paese di
+  destinazione, ove il bene è consumato.  All'esportazione il bene viene
+  dunque "depurato" dell'Iva pagata fino a quel momento, mentre viene
+  applicata l'Iva ai beni importati.  È il principio applicato in Europa.
+\end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Il principio di destinazione}
+  \begin{itemize}
+  \item C'è consenso generale sulla preferibilità del principio di distinazione:
+  \begin{itemize}
+  \item (prescidendo da eventuali effetti dovuti alla traslazione
+    dell'imposta) il gettito va interamente al Paese in cui il bene viene
+    consumato, per cui ogni paese raccoglie il gettito a carico del
+    consumatori residenti;
+  \item il principio di destinazione garantisce che l'applicazione di imposte
+    differenziate non influenzi i flussi di importazioni ed esportazioni.
+  \end{itemize}
+\item Nelle scelte del consumatore finale rileva il prezzo comprensivo di
+  imposta:
+  \begin{itemize}
+  \item \(p =\) prezzo prima dell'imposta del bene prodotto nel paese;
+  \item \(p^* =\) prezzo prima dell'imposta del bene prodotto all'estero.
+  \end{itemize}
+  \begin{equation*}
+\begin{array}{cp{1.5cm}c}
+   \text{(destinazione)} &&  \text{(origine)} \\
+   \dfrac{q}{q^*}=\dfrac{p(1+\tau)}{p^*(1+\tau)}=\dfrac{p}{p^*} &&
+   \dfrac{q}{q^*}=\dfrac{p(1+\tau)}{p^*(1+\tau^*)}\not= \dfrac{p}{p^*}.
+\end{array}
+\end{equation*}
+\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
+\begin{frame}{Come si attua il principio di destinazione (in presenza di dogana)}
+
+  \begin{itemize}
+  \item L'imposta su applica sulle importazioni e non sulle esportazioni: le
+    esportazioni sono operazioni \alert{non imponibili}.
+  \end{itemize}
+
+  \begin{figure}\centering
+    \includegraphics[width=.8\textwidth]{./figure/IVA-destinazione.pdf}
+  \end{figure}
+
+  \begin{itemize}
+  \item L'Iva è versata interamente nel paese Beta, e il bene è gravato dalla
+    relativa aliquota.
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Come si attua il principio di destinazione (in presenza di dogana) /2}
+
+  \begin{itemize}
+  \item Nel caso di \alert{importazioni destinate ai consumatori finali} del paese
+    Beta l'imposta può essere riscossa al passaggio della dogana.
+  \item Nel caso di \alert{acquisti diretti} di beni nel territorio nazionale da parte
+    di non residenti l'applicazione del principio è più complessa. Nella UE:
+    \begin{itemize}
+    \item i residenti extra-UE possono chiedere un rimborso dell'IVA pagata
+      per beni acquistati nella UE trasportabili nel proprio bagaglio
+      personale;
+    \item non è previsto il rimborso per l'IVA sui servizi;
+    \item i residenti UE pagano comunque l'IVA del paese in cui hanno
+      effettuato l'acquisto;
+    \item per acquisti a distanza è prevista l'applicazione dell'IVA del paese
+      di destinazione.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Il regime UE per gli scambi intracomunitari}
+
+  \begin{itemize}
+  \item Le importazioni intra-UE (\emph{acquisti intracomunitari}) hanno un
+    trattamento diverso dalle importazioni da fuori UE, vista anche
+    l'abolizione delle dogane nel 1993.
+  \item Nel 1993, la proposta di assetto definitivo nel nuovo contesto di
+    abolizione delle dogane prevedeva:
+    \begin{itemize}
+    \item passaggio al principio di origine con imponibilità delle
+      esportazioni e non imponibilità delle importazioni;
+    \item creazione di una \emph{stanza di compensazione} (\emph{clearing
+        house}) per risolvere il problema della ripartizione del gettito;
+    \item armonizzazione delle aliquote di imposta per evitare il rischio di
+      concorrenza fiscale.
+    \end{itemize}
+  \item Nota bene: il sistema previsto, con il metodo imposta da imposta,
+    avrebbe comunque garantito l'applicazione dell'aliquota del paese di
+    destinazione nel caso delle transazioni B2B
+  \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{L'IVA in base all'origine nelle transazioni B2B}
+\begin{figure}[htbp]
 \centering
-\begin{center}
-\includegraphics[width=.9\textwidth]{./figure/IVA-destinazione.pdf}
-\end{center}
+\includegraphics[width=.8\textwidth]{./figure/IVA-origine.pdf}
+\end{figure}
 
 \begin{itemize}
-\item L'Iva è versata interamente nel paese Beta, e il bene è gravato dalla
-relativa aliquota.
+\item Il bene consumato in Beta è gravato dall'Iva di Beta: viene comunque
+  garantita la neutralità;
+\item il gettito non va interamente al paese dove ha luogo il consumo, ma
+  viene ripartito tra i diversi paesi in proporzione al valore aggiunto.
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\begin{center}
-\includegraphics[width=.9\textwidth]{./figure/IVA-origine.pdf}
-\end{center}
-
+\begin{frame}{Il regime «transitorio» vigente nella UE}
 \begin{itemize}
-\item Il bene consumato in Beta è gravato dall'Iva di Beta, ma il gettito è
-ripartito tra i diversi paesi in proporzione al valore aggiunto
+\item La UE ha continuato ad adottare il \alert{regime transitorio} avviato nel 1993,
+basato sul principio di \alert{destinazione}, ma adattato all'assenza di dogane:
 \end{itemize}
-\end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\begin{center}
-\includegraphics[width=.9\textwidth]{./figure/IVA-intracomunitaria.pdf}
-\end{center}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.8\textwidth]{./figure/IVA-intracomunitaria.pdf}
+\end{figure}
 
 \footnotesize
 L'impresa importatrice applica il \emph{reverse charge}: l'IVA sulle importazioni
@@ -674,11 +754,21 @@ l'aliquota del paese destinazione.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\begin{center}
+\begin{frame}{La nuova proposta di regime IVA nella UE}
+\begin{itemize}
+\item Orientamento più recente (2018): superamento del sistema vigente prevedendo
+che l'impresa esportatrice applichi l'IVA con aliquota del paese
+destinazione e il paese origine provveda a versare tale IVA al paese
+destinazione.
+\end{itemize}
+
+
+\begin{figure}[htbp]
+\centering
 \includegraphics[width=.9\textwidth]{./figure/IVA-proposta-2018.pdf}
-\end{center}
+\end{figure}
 \end{frame}
+\end{document}
 
 
 \end{document}
