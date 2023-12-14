@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[11pt,italian]{beamer}
+\documentclass[aspectratio=149,11pt,italian]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{capt-of}
+\usepackage{icomma}
 \usepackage{hyperref}
 \institute{Università di Siena}
 \usepackage{localheader}
@@ -119,42 +120,40 @@ Nota bene: Se successivamente l'impresa distribuirà quell'euro di
 cutile, vi sarà un dividendo di 1 € «compensato» da una minusvalenza di 1 €.
 \end{block}
 
-\begin{itemize}
-\item Tuttavia, la tassazione delle plusvalenze è quasi sempre alla
-realizzazione. Ciò consente il differimento dell'imposta.
-\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Perché una tassazione autonoma delle società di capitali? /3}
 \begin{itemize}
-\item Dunque: non potendo tassare per trasparenza a in assenza di una tassazione
-delle plusvalenze alla maturazione, si rende necessaria un'imposta che
-faccia da \emph{backstop}, misura di sicurezza per evitare che i soci sfuggano
-alla tassazione. L'imposta sul reddito societario opera dunque come una
-sorta di ritenuta d'acconto.
+\item La tassazione delle plusvalenze è quasi sempre alla realizzazione. Ciò
+  consente il differimento dell'imposta.
+\item Dunque, si rende necessaria un'imposta che faccia da \emph{backstop},
+  misura di sicurezza per evitare che i soci sfuggano alla
+  tassazione. L'imposta sul reddito societario opera dunque come una sorta di
+  ritenuta d'acconto.
 \end{itemize}
 \bigskip
 
 \begin{itemize}
-\item In Italia possono optare per la tassazione per trasparenza
+\item Troviamo una conferma indiretta che la differenza tra le diverse forme
+  di impresa sia la difficoltà di applicare la trasparenza in presenza di
+  azionariato diffuso nel fatto che:
 \begin{itemize}
-\item le Srl con numero di soci non superiore a 10 e le società cooperative con
-numero di soci non superiore a 20 (se reddito entro certi limiti)
-\item le SpA partecipate ad altre società, purché ciascuna di esse abbia
-partecipazione agli utili e diritti di voto tra 10 e 50\%.
+\item In Italia possono optare per la tassazione per trasparenza: le Srl con
+  numero di soci non superiore a 10, le società cooperative con numero di
+  soci non superiore a 20 (se reddito entro certi limiti), le SpA partecipate
+  ad altre società, purché ciascuna di esse abbia partecipazione agli utili e
+  diritti di voto tra 10 e 50\%.
+\item Negli Stati Uniti possono optare per lo status di S-corporation ed
+  essere tassate per trasparenza le società con meno di 100 soci, se questi
+  sono residenti.
 \end{itemize}
-\item Negli Stati Uniti possono optare per lo status di S-corporation ed essere
-tassate per trasparenza le società con meno di 100 soci, se questi sono
-residenti.
-\item Una conferma indiretta che la differenza tra le diverse forme di impresa sia
-la difficoltà di applicare la trasparenza in presenza di azionariato
-diffuso
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Tipologie di impresa e tassazione: riassumendo}
+
 Tre categorie di imprese residenti:
 \begin{itemize}
 \item imprese individuali e familiari $\to$ Irpef
@@ -162,17 +161,16 @@ Tre categorie di imprese residenti:
 \item se impresa familiare, imputabile ai familiari (coniuge, parenti, affini)
 fino al 49\% del reddito
 \end{itemize}
-\item società di persone $\to$ Irpef
+\item società di persone $\to$ Irpef (applicata ai soci «per trasparenza»)
 \begin{itemize}
 \item redditi «imputati a ciascun socio, indipendentemente dalla percezione,
-proporzionalmente alla sua quota di partecipazione agli utili» e
-tassazione «per trasparenza»
+proporzionalmente alla sua quota di partecipazione agli utili»
 \end{itemize}
 \item società di capitali ed enti pubblici e privati $\to$ Ires
 \end{itemize}
 
 \begin{block}{}
-\begin{center}
+\begin{center}\small
 \begin{tabular}{{lrrr}}
 Tipo & numerosità & volume d'affari & reddito d'impresa\\[0pt]
 \hline
@@ -184,8 +182,8 @@ Società di capitali & 19\% & 82,5\% & 64,5\%\\[0pt]
 \end{block}
 \begin{itemize}
 \item Tutti i redditi conseguiti da enti commerciali soggetti IRES e IRPEF
-(imprese individuali e società di persone), da qualsiasi fonte (es. da
-fabbricati, di capitale), sono considerati reddito di impresa.
+  (imprese individuali e società di persone), da qualsiasi fonte (es. da
+  fabbricati, di capitale), sono considerati reddito di impresa.
 \end{itemize}
 \end{frame}
 
@@ -249,7 +247,7 @@ riguardano:
 \begin{frame}{La determinazione contabile del reddito di impresa /2}
 \begin{center}
 \centering
-\includegraphics[height=8cm]{./figure/tabella-conto-economico.pdf}
+\includegraphics[height=7.5cm]{./figure/tabella-conto-economico.pdf}
 \end{center}
 \end{frame}
 
@@ -375,10 +373,10 @@ sistema a quote decrescenti e il sistema a quote costanti
 \begin{gather*}
 \text{Quote decrescenti:}\quad
  \frac{500}{1,1}+\frac{250}{1,1^2}+\frac{125}{1,1^3}+
- \frac{62,25}{1,1^4}+\frac{62,25}{1,1^5}=836.57 \\
+ \frac{62,25}{1,1^4}+\frac{62,25}{1,1^5}=836,57 \\
 \text{Quote costanti:}\quad
  \frac{200}{1,1}+\frac{200}{1,1^2}+\frac{200}{1,1^3}+
- \frac{200}{1,1^4}+\frac{200}{1,1^5}=758.16
+ \frac{200}{1,1^4}+\frac{200}{1,1^5}=758,16
 \end{gather*}
 \end{itemize}
 \end{frame}
@@ -403,7 +401,7 @@ aumentati del 30\% del ROL.
 \small
 Un'impresa ottiene un reddito operativo lordo di 30.000 €, percepisce
 interessi attivi per 4.000 € e paga interessi passivi per 23.000 €.  Gli
-interessi passivi sono deducibili solo in misura pari a: $4.000 + 30\% 30.000
+interessi passivi sono deducibili solo in misura pari a: $4.000 + 30\% \cdot30.000
 = 13.000$ euro. Gli interessi passivi in eccesso, pari a 10.000 €, potranno
 essere dedotti, entro lo stesso limite, negli esercizi successivi non oltre il
 quinto.
@@ -472,6 +470,7 @@ avuto ricorrendo a finanziamento a debito con interesse del 1,3\%
     {}-\text{Perdite riportabili}  -\text{ACE} \;\Big] &
   \end{array}
 \end{equation*}
+\centering\bigskip
 
 L'aliquota IRES è del 24\%
 \end{frame}
@@ -688,6 +687,7 @@ parte ($c$) con debito in parte ($1-c$) con capitale di rischio, $0<c<1$
 \end{itemize}
 \end{itemize}
 
+\vspace{-1mm}
 \begin{block}{}
 \fontsize{8}{9}\selectfont
 Ciò che è rilevante è la fonte di finanziamento \emph{al margine}:

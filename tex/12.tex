@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[11pt,italian]{beamer}
+\documentclass[aspectratio=149,11pt,italian]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{capt-of}
+\usepackage{icomma}
 \usepackage{hyperref}
 \institute{Università di Siena}
 \usepackage{localheader}
@@ -203,9 +204,9 @@ del 9\% (35 anni di contributi).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Regimi di tassazione delle pensioni in UE}
-\begin{center}
-\includegraphics[width=.9\linewidth]{./figure/regimi-tassazione-pensioni.png}
-\end{center}
+\begin{figure}
+\includegraphics[width=.75\textwidth]{./figure/regimi-tassazione-pensioni.png}
+\end{figure}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -318,30 +319,24 @@ maggiore di 80.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Tassazione alla realizzazione e \emph{lock-in}}
 \begin{itemize}
-\item Titolo acquistato a 100
+\item Titolo acquistato a 100, in $t$ vale 200;
 \item imposta su plusvalenze $g=20\%$
-\item il titolo vale 200 nel periodo $t$ e ci si aspetta per $t+1$ ulteriore
-rivalutazione del 6\%
-\item due possibilità:
-\begin{itemize}
-\item \emph{Opzione 1}: liquidare il titolo e acquistarne un altro
-\item \emph{Opzione 2}: mantenere il titolo
+\item prevediamo che in $t+1$ il valore del titolo sarà aumentato di un ulteriore 6\%.
+\item Confrontiamom due possibilità:
+  \begin{description}
+  \item[{Opzione 1}] Liquidare il titolo e acquistarne un altro. Pagniamo
+    un'imposta di 20, reinvesto 180, rivendo il titolo a 190,8, pago imposta
+    di $0,2\times(190,8-180)=2,16$, consumo 188,64
+  \item[{Opzione 2}] Mantenere il titolo in portafoglio. Vendo il titolo a
+    212, pago imposta $0,2\times(212-180)=22,4$, consumo 189,6
+  \end{description}
+\item Conviene l'opzione 2. Converrebbe anche se il rendimento ottenibile dal
+  titolo alternativo fosse superiore al 6\% (es. 6,5\%).
 \end{itemize}
-\end{itemize}
-Confrontiamo:
-\begin{description}
-\item[{Opzione 1}] pago imposta di 20, reinvesto 180, rivendo il titolo a 190,8, pago
-imposta di $0,2\times(190,8-180)=2,16$, consumo 188,64
-\item[{Opzione 2}] vendo il titolo a 212, pago imposta $0,2\times(212-180)=22,4$,
-consumo 189,6
-\end{description}
-Conviene l'opzione 2. Converrebbe anche se il rendimento ottenibile dal titolo
-alternativo fosse superiore al 6\% (es. 6,5\%).  La tassazione alla
-realizzazione incentiva a non modificare il portafoglio corrente \alert{anche in
-presenza di opportunità di investimento più convenienti}
-\begin{itemize}
-\item determina \alert{un'allocazione inefficiente delle risorse}.
-\end{itemize}
+La tassazione alla realizzazione incentiva a non modificare il portafoglio
+corrente
+\alert{anche in presenza di opportunità di investimento più convenienti}.\\
+Si determina cioè \alert{un'allocazione inefficiente delle risorse}.
 \end{frame}
 
 \section{Tassazione della ricchezza}
