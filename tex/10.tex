@@ -1,5 +1,6 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[11pt]{beamer}
+\documentclass[aspectratio=64,11pt]{beamer}
+\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -11,12 +12,13 @@
 \usepackage{hyperref}
 \institute{Università di Siena}
 \usepackage{localheader}
-\usepackage{tikz}
+\usepackage{tikz}\usetikzlibrary{arrows.meta}
 \usepackage{booktabs,tabularx}
 \usepackage{setspace}
 \usepackage{quoting}
 \usepackage[italian]{babel}
 \usepackage{fancybox}
+\usepackage{icomma}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \newcommand\€{\,\text{€}}
 \usetheme{default}
@@ -52,25 +54,26 @@ centrale
 \begin{frame}{Dall'imponibile all'imposta}
 \begin{figure}
 \centering
-\includegraphics[height=7cm]{./figure/da-reddito-a-imposta.pdf}
+\includegraphics[height=7.5cm]{./figure/da-reddito-a-imposta.pdf}
 \end{figure}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Aspetti fondamentali}
-La definizione di un'imposta personale richiede una risposta alle seguenti questioni:
 \begin{itemize}
-\item Chi tassare
-\item Cosa tassare (quali redditi)
-\item Come tassare i redditi
-\item Quanto tassarli
+\item Le caratteristiche dell'imposta personale sul reddito saranno definite chiarendo:
+\begin{itemize}
+\item chi tassare
+\item cosa tassare (quali redditi)
+\item come tassare i redditi
+\item quanto tassarli.
 \end{itemize}
-Gli obiettivi: distribuire il carico fiscale in modo «equo».
-Tradizionalmente, due criteri:
+\item L'obiettivo di distribuire il carico fiscale in modo «equo» può fare riferimento a due criteri:
 \begin{itemize}
-\item \emph{beneficio}: l'imposta è una sorta di controprestazione per i servizi forniti dallo Stato
-\item \emph{capacità contributiva}: il carico deve essere ripartito in base alla capacità di contribuire, a prescindere dal beneficio
+\item principio del \emph{beneficio}: l'imposta è una sorta di controprestazione per i servizi forniti dallo Stato;
+\item principio della \emph{capacità contributiva}: il carico deve essere ripartito in base alla capacità di contribuire, a prescindere dal beneficio.
+\end{itemize}
 \end{itemize}
 \begin{block}{Art. 53 Costituzione}
 Tutti  sono  tenuti  a  concorrere  alle spese pubbliche in ragione della loro capacità contributiva.\\[0pt]
@@ -233,21 +236,18 @@ dell'impresa è la tassazione del \emph{cash flow})
    sudore, consuma poco, dovrebbe pagare di più di colui che vive
    oziosamente, produce poco e spende tutto quel che guadagna...
 \end{quoting}
-Idea che si debba tassare ciò che un individuo \emph{toglie} alle risorse
+L'idea è che si debba tassare ciò che un individuo «toglie» alle risorse
 disponibili con il consumo, non ciò che produce.
-\item J. S. Mill (\emph{Principles of Political Economy}, 1848) avanza l'argomento
-della \alert{doppia tassazione del risparmio}: se il reddito tassato viene
-risparmiato, sul rendimento (già tassato) si applica una nuova imposta
-\begin{quoting}\small
-Tassare la somma investita, e successivamente tassare anche i frutti dell'investimento, significa tassare la stessa porzione dei mezzi del contribuente per due volte. Il capitale e l'interesse non rappresentano due parti distinte che insieme formano le sue risorse, sono la stessa parte contata due volte.
-\end{quoting}
 \end{itemize}
 \end{frame}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{L'argomento della «doppia tassazione» del risparmio}
+\begin{frame}{Giustificazioni del reddito spesa: la «doppia tassazione» del risparmio}
 \begin{itemize}
+\item J. S. Mill (\emph{Principles of Political Economy}, 1848) avanza l'argomento della \alert{doppia tassazione del risparmio}: se il reddito tassato viene risparmiato, sul rendimento (già tassato) si applica una nuova imposta
+\begin{quoting}\small
+Tassare la somma investita, e successivamente tassare anche i frutti dell'investimento, significa tassare la stessa porzione dei mezzi del contribuente per due volte. Il capitale e l'interesse non rappresentano due parti distinte che insieme formano le sue risorse, sono la stessa parte contata due volte.
+\end{quoting}
 \item Esempio: reddito di 1000 €, imposta del 20\%. Il reddito netto di 800 € viene
 investito in una rendita perpetua che dà un rendimento del 5\% (pari a 40 €),
 su cui si paga l'imposta del 20\%.  Il risparmiatore riceve un flusso di
@@ -256,20 +256,26 @@ rendimenti annuo di 32 €, e paga annualmente 8 € di imposte.
 Il flusso di imposte future, attualizzato al tasso di rendimento netto del
 4\%, è pari a $8€/0,4=160 €$. Il contribuente paga cioè un ulteriore 20\% sul reddito
 netto già tassato.
+\end{itemize}
+\end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}{Giustificazioni del reddito spesa: effetti sulle scelte intertemporali}
+
+\begin{itemize}
 \item In termini formali, con il reddito entrata abbiamo:  
 \begin{gather*}
   c_1=z_1-s-tz_1\\
   c_2=z_2+s(1+r) -t(z_2 +rs)
 \end{gather*}
-ovvero:
+ovvero, sostituendo:
 \begin{equation*}
 c_1+\frac{c_2}{(1+r)}=
 \left[z_1+\frac{z_2}{(1+r)}\right](1-t)-t\frac{rs}{(1+r)}.
 \end{equation*}
-\item Non rispettata l'equità orizzontale tra due contribuenti con diversa
+\item Non viene rispettata l'equità orizzontale tra due contribuenti con diversa
 propensione al risparmio.
-\item Sul piano dell'efficienza: distorsione nelle scelte di risparmio.
+\item Si determina una distorsione nelle scelte di risparmio, dunque un'allocazione inefficiente del consumo tra i due periodi.
 \end{itemize}
 \end{frame}
 
@@ -436,15 +442,15 @@ $T(B)/B$ decrescente in $B$ & imposta regressiva\\[0pt]
 \begin{column}{.4\columnwidth}
 \small
 \begin{itemize}
-\item A partire da un'imposta proporzionale, applichiamo una deduzione $D$ dall'imponibile, oppure una detrazione $d$ dall'imposta:
-\begin{gather*}
-T(B) = t\cdot B - d \\
-T(B)=t\cdot (B-D)
-\end{gather*}
-\item Nota bene: se l'aliquota è costante (no scaglioni) e $d=tD$, le due soluzioni
-\end{itemize}
-sono equivalenti.
-\begin{itemize}
+\item A partire da un'imposta proporzionale, applichiamo una deduzione $D$
+  dall'imponibile, oppure una detrazione $d$ dall'imposta:
+  \vspace{-3mm}
+  \begin{gather*}
+    T(B) = t\cdot B - d \\
+    T(B)=t\cdot (B-D)
+  \end{gather*}
+\item Nota bene: se l'aliquota è costante (no scaglioni) e $d=tD$, le due
+  soluzioni sono equivalenti.
 \item Esempio:
 \begin{itemize}
 \item aliquota 25\%,
@@ -490,15 +496,55 @@ parte di reddito imponibile che ricade nel corrispondente scaglione.
 \end{figure}
 \end{column}
 \end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Progressività per scaglioni in formule}
+
+  \centering
+\begin{tikzpicture}
+\draw[->, line width=2mm,arrows={-Latex[length=5mm,angle'=90]},
+      color=blue!30!white] (1.5,0) to[bend right] (0,-2);
+\end{tikzpicture}
+%  
+  \begin{tabular}[b]{lr}
+\toprule scaglioni & aliquote \\ \midrule 
+0-10.000 & 12\% \\ 
+  10.001-30.000 & 20\% \\ 
+  oltre 30.000 & 40\% \\
+  \bottomrule
+  \end{tabular}
+  \hspace{3cm}
 
   \begin{equation*}
   T(z)=
   \begin{cases}
-    12\%\cdot z & 0\le z\le10.000\\
-    20\%\cdot (z-10.000) + 1.200 & 10.000<z\le30.000\\
-    40\%\cdot (z-30.000) + 5.200 & z > 30.000
+    12\%\, z & 0\le z\le10.000\\
+    12\%\, 10.000 + 20\%\, (z-10.000) & 10.000<z\le30.000\\
+    12\%\, 10.000 + 20\%\, (30.000-10.000) + 40\%\,(z-30.000) & z > 30.000
   \end{cases}
 \end{equation*}
+
+\begin{columns}
+  \begin{column}{.25\textwidth}
+    \hfill
+\begin{tikzpicture}
+\draw[->, line width=2mm,arrows={-Latex[length=5mm,angle'=90]},
+      color=blue!30!white] (0,0) to[bend right] (1.5,-1);
+\end{tikzpicture}
+\end{column}
+% 
+\begin{column}{.6\textwidth}
+  \begin{equation*}
+  T(z)=
+  \begin{cases}
+    12\%\,z & 0\le z\le10.000\\
+    1.200 + 20\%\,(z-10.000) & 10.000<z\le30.000\\
+    5.200 + 40\%\,(z-30.000) & z > 30.000
+  \end{cases}
+\end{equation*}
+\end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -541,6 +587,16 @@ parte di reddito imponibile che ricade nel corrispondente scaglione.
 \centering
 \includegraphics[height=4cm]{./figure/scaglioni-IRPEF-2022.png}
 \end{figure}
+
+\begin{equation*}
+    \begin{cases}
+    23\%\,z & 0\le z\le15.000\\
+    3.450 + 25\%\,(z-15.000) & 15.000<z\le28.000\\
+    6.700 + 35\%\,(z-15.000) & 28.000<z\le50.000\\
+    14.400 + 43\%\,(z-50.000) & z > 50.000
+  \end{cases}
+\end{equation*}
+
 \end{frame}
 
 
@@ -622,7 +678,7 @@ di 30 €.
 \begin{frame}{Le detrazioni «a scalare»}
 \begin{figure}
 \centering
-\includegraphics[width=.8\linewidth]{./figure/progressività-detrazione-a-scalare.pdf}
+\includegraphics[width=.75\linewidth]{./figure/progressività-detrazione-a-scalare.pdf}
 \end{figure}
 
 \begin{itemize}
@@ -757,15 +813,10 @@ offerta di lavoro sarà maggiormente disincentivata.
 logica dello \emph{splitting}, ma tiene conto anche della presenza di altri
 familiari a carico.
 \item Al reddito complessivo della famiglia si applica un quoziente $q$ deteminato
-in base alla composizione familiare:
-\begin{itemize}
-\item $q$ vale 2 per una coppia
-\item viene aumentato di 0,5 per ciascun figlio per i primi 2 figli
-\item viene aumentato di 1 per ciascun figlio oltre il secondo
-\end{itemize}
+in base alla composizione familiare: $q$ vale 2 per una coppia, viene aumentato di 0,5 per ciascun figlio per i primi 2 figli e di 1 per ciascun figlio oltre il secondo.
 \item L'imposta da pagare a livello familiare è data da:
 \begin{equation*}
-  q\cdot T\left(\frac{\sum_{h}Y_{h}}{q}\right)
+  q\cdot T\left( \frac{\sum_{h}Y_{h}}{q} \right)
 \end{equation*}
 \item Esempio: una famiglia con un unico contribuente con reddito 100.000 €, una
 moglie e 4 figli. Il quoziente è $q=5$. Invece di applicare a 100.000 €
@@ -833,12 +884,17 @@ attività
 \item \alert{redditi da fabbricati} (N.B. esclusi quelli rurali e quelli di cui sono titolari
 imprese commerciali)
 \end{itemize}
+
+\begin{columns}
+  \begin{column}{.5\textwidth}
 La base imponibile è determinata
 \begin{itemize}
 \item dal \alert{canone di affitto o di locazione}, per i terreni in affitto e gli immobili
 in locazione
 \item dalla \alert{rendita catastale} in tutti gli altri casi (reddito ``normale'')
 \end{itemize}
+\end{column}
+\begin{column}{.5\textwidth}
 \begin{block}{}
 \small
 L'adozione, invece del reddito effettivo, di un criterio di \alert{reddito
@@ -847,6 +903,8 @@ orizzonte più lungo, si giustifica: (1) per la semplicità amministrativa; (2) 
 la presenza di componenti di reddito non monetario; (3) per la variabilità del
 reddito nel tempo; (4) per l'arbitrarietà del periodo di imposta.
 \end{block}
+\end{column}
+\end{columns}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{1. Redditi fondiari}
@@ -1088,7 +1146,7 @@ categorie di reddito:
 
 \begin{figure}
 \centering
-\includegraphics[height=4cm]{./figure/categorie-di-reddito-Irpef.png}
+\includegraphics[height=3.8cm]{./figure/categorie-di-reddito-Irpef.png}
 \end{figure}
 
 
@@ -1101,9 +1159,10 @@ prevista dell'impianto originario.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Quanto pesano le diverse tipologia di reddito nell'Irpef}
-\begin{center}
-\includegraphics[width=\textwidth]{./figure/redditi-dichiarati-per-tipologia-2020-color.pdf}
-\end{center}
+\vspace{-3mm}
+\begin{figure}
+  \includegraphics[width=.9\textwidth]{./figure/redditi-dichiarati-per-tipologia-2020-color.pdf}
+\end{figure}
 
 \begin{itemize}
 \item I redditi di lavoro dipendente e pensioni corrispondeono al 60\% dei redditi
@@ -1147,13 +1206,19 @@ donazioni a favore di Onlus (max tra 10\% del RC e 70.000 €)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Dall'imponibile all'imposta lorda}
-\begin{figure}
+
+  \begin{columns}
+    \begin{column}{.35\textwidth}
 \centering
 \includegraphics[height=2.7cm]{./figure/scaglioni-IRPEF-2022.png}
-\end{figure}
+\end{column}
+\begin{column}{.65\textwidth}
+\centering
+\includegraphics[height=3cm]{./figure/scaglioni-2022-grafico.pdf}
+\end{column}
+\end{columns}
 
 \small
-\begin{center}
 \begin{tabular}{lll}
 Scaglione & Aliquota & Ovvero\\[0pt]
 \hline
@@ -1162,13 +1227,8 @@ da 15.001 a 28.000 & 25\% & $3.450 + 25\% (R - 15.000)$\\[0pt]
 da 28.001 a 50.000 & 35\% & $6.700 + 35\% (R - 28.000)$\\[0pt]
 da 50.001 & 43\% & $14.400 + 43\% (R - 50.000)$\\[0pt]
 \end{tabular}
-\end{center}
-
-\begin{figure}
-\centering
-\includegraphics[height=3cm]{./figure/scaglioni-2022-grafico.pdf}
-\end{figure}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Le detrazioni}
@@ -1224,7 +1284,7 @@ all'imposta non goduta (vedi oltre il bonus degli "80 euro")
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Detrazioni per tipologia di reddito}
 \begin{columns}
-\begin{column}{.75\columnwidth}
+\begin{column}{.65\columnwidth}
 \scriptsize
 \begin{tabular}{p{22mm}>{\raggedright}p{48mm}}
   R. imponibile (€) & detrazione (€)\tabularnewline\toprule
@@ -1298,7 +1358,7 @@ marginale effettiva.
 \vspace*{-5mm}
 \begin{figure}
 \centering
-\includegraphics[height=8.3cm]{./figure/aliquote-medie-marginali-2022.pdf}
+\includegraphics[height=8.5cm]{./figure/aliquote-medie-marginali-2022.pdf}
 \end{figure}
 \end{column}
 \end{columns}
@@ -1334,11 +1394,8 @@ oltre il primo (N.B. si considera il "reddito per detrazioni")
 \item Per figli portatori di handicap, detrazione aumentata di 400
 \item Se più di 3 figli, la detrazione è aumentata di 200 per ciascun figlio
 \item Se 4 figli o più, detrazione fissa aggiuntiva di 1200 euro (riconosciuta
-come credito di imposta in casi di incapienza)
-\begin{itemize}
-\item Dunque, se 4 figli di cui 2 sotto i 3 anni:
-$$ [2\times(950+200)+2\times(1.220+200)](140.000-R)/140.000+1200 $$
-\end{itemize}
+come credito di imposta in casi di incapienza). Dunque, se 4 figli di cui 2 sotto i 3 anni:
+$[2\times(950+200)+2\times(1.220+200)](140.000-R)/140.000+1200$
 \item Ripartita tra entrambi i genitori se il coniuge non è a carico
 \item Come la detrazione per reddito, l'aliquota "a scalare" comporta un aumento
 dell'aliquota marginale implicita

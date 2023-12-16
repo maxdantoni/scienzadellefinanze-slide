@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[aspectratio=149,11pt,italian]{beamer}
+\documentclass[aspectratio=64,11pt]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -19,7 +19,7 @@
 \usepackage{fancybox}
 \usepackage{tabularray}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
-\newenvironment{nobulletlist}{\begin{list}{--}{\itemsep=.5pt\itemindent=2.5ex\leftmargin=0pt}}{\end{list}}
+\newenvironment{nobulletlist}{\begin{list}{--}{\itemsep=3pt\itemindent=2ex\labelsep=.7ex\leftmargin=0pt}}{\end{list}}
 \usetheme{default}
 \author{Massimo D'Antoni}
 \date{2023-2024}
@@ -111,11 +111,10 @@ alla P.A.}\\[0pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{I principali enti nei tre sottosettori della P.A.}
 \vspace*{-5mm}
-\footnotesize
+\fontsize{8}{8.5}\selectfont
 \begin{columns}[t]
 \begin{column}{.33\columnwidth}
 \begin{block}{\footnotesize Amministrazioni centrali}
-\fontsize{8}{7,5}\selectfont
 \begin{nobulletlist}
 \item Gli organi costituzionali e di rilievo costituzionale, la Presidenza del Consiglio dei Ministri e i Ministeri;
 \item le agenzie fiscali (ad es. Agenzia del Demanio, Agenzia delle Entrate);
@@ -123,14 +122,13 @@ alla P.A.}\\[0pt]
 \item gli enti produttori di servizi economici (ad es. Anas, Ente per l’aviazione civile, Equitalia, Fintecna, Rete Ferroviaria Italiana);
 \item le autorità amministrative indipendenti (ad es. authority dei trasporti, della concorrenza);
 \item gli enti produttori di servizi assistenziali, ricreativi e culturali (ad es. Croce Rossa italiana, CONI, RAI);
-\item gli enti e istituzioni di ricerca (ad es. CNR, INFN, Istituto superiore di sanità).
+\item gli enti e istituzioni di ricerca (ad es. CNR, INFN, Istituto superiore di sa\-nità).
 \end{nobulletlist}
 \end{block}
 \end{column}
 
 \begin{column}{.33\columnwidth}
 \begin{block}{\footnotesize Amministrazioni locali}
-\fontsize{8}{7.5}\selectfont
 \begin{nobulletlist}
 \item le Regioni e province autonome, le province e città metropolitane, i comuni, le comunità montane, le unioni di comuni;
 \item le Agenzie territoriali (ad es. per il diritto allo studio universitario, per il turismo, le agenzie de lavoro, le agenzie regionali e provinciali per la formazione, la ricerca e l’ambiente) e altre agenzie regionali e locali;
@@ -146,11 +144,10 @@ alla P.A.}\\[0pt]
 
 \begin{column}{.33\columnwidth}
 \begin{block}{\footnotesize Enti di previdenza}
-\fontsize{8}{8}\selectfont
 \begin{nobulletlist}
 \item INPS (Istituto nazionale previdenza sociale);
-\item l’INAIL, Istituto nazionale per l’assicurazione contro gli infortuni sul lavoro;
-\item casse di previdenza e assistenza per specifiche categorie professionali.
+\item l’INAIL, Istituto nazionale per l’assicurazione contro gli infortuni sul la\-voro;
+\item casse di previdenza e assistenza per specifiche categorie professio\-nali.
 \end{nobulletlist}
 \end{block}
 \end{column}
@@ -192,18 +189,18 @@ alimentare la domanda privata di beni e servizi
 
 \begin{column}{.4\columnwidth}
 \begin{block}{}
-\scriptsize
-la spesa può aumentare in valore assoluto ma ridursi in rapporto al PIL
+\footnotesize
+La spesa può aumentare in valore assoluto ma ridursi in rapporto al PIL
 \end{block}
 
 \begin{block}{}
-\scriptsize
+\footnotesize
 I valori riportati sono diversi da quelli nel testo, in quanto vengono continuamente aggiornati e spesso corretti dall’ISTAT. 
 I dati più recenti sono da considerare sempre provvisori e a volte anche i dati più lontani  nel tempo cambiano, per effetto dell’adozione di nuovi criteri di misura e classificazione
 \end{block}
 
 \begin{block}{}
-\scriptsize
+\footnotesize
 I convenzionalmente, per consentire confronti tra paesi e nel tempo, si rapporta la spesa al PIL, ma queste percentuali \alert{non significano} che il PIL è per il 55\% pubblico e per il restante 45\% privato!
 \end{block}
 \end{column}
@@ -214,14 +211,14 @@ I convenzionalmente, per consentire confronti tra paesi e nel tempo, si rapporta
 \begin{frame}{La classificazione economica della spesa pubblica}
 Possiamo classificare la spesa in base alla categoria economica:
 \begin{columns}
-\begin{column}{.55\columnwidth}
+\begin{column}{.6\columnwidth}
 \begin{figure}
 \centering
 \includegraphics[width=1.1\textwidth]{./figure/spesa-pubblica-classificazione-economica-color.pdf}
 \end{figure}
 \end{column}
 
-\begin{column}{.45\columnwidth}
+\begin{column}{.4\columnwidth}
 \footnotesize
 \begin{itemize}
 \item spese correnti e in conto capitale;
