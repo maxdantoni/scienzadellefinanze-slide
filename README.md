@@ -33,5 +33,5 @@ In ciascun file sono impostati alcuni dati relativi al docente, all'insegnamento
 
 È possibile cambiare del tutto il tema grafico delle slide modificando o sostituendo il file di stile `localheader.sty`. Nel caso di sostituzione con un nuovo file con un nome diverso, occorrerà modificare il comando `\usepackage{localheader}` presente nel preambolo dei file `.tex`.
 
-**Nota bene:** le slide vengono compilate anche nel caso in cui il comando `\usepackage{localheader}` venga semplicamente rimosso dal file `.tex`, ma in questo caso sarà utilizzato un tema di base con una grafica essenziale.
+**Nota bene:** le slide possono essere compilate anche rimuovendo il comando `\usepackage{localheader}` dal file `.tex`. In questo caso sarà utilizzato un tema di base con una grafica essenziale. Inoltre, non sarà disponibile il comando `\begin{resize}...\end{resize}`, che dovrà quindi essere disattivato dove presente.
 
