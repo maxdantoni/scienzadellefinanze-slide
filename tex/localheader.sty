@@ -28,7 +28,7 @@
 \usepackage[labelformat=empty,font={footnotesize,sf},
             justification=centering,margin=1cm]{caption}
 \usepackage{datetime}
-            
+
 \definecolor{greenbg}{RGB}{181,213,138}
 \definecolor{greenfg}{RGB}{71,104,75}
 
@@ -64,6 +64,7 @@
 \setbeamercolor{section title}{parent=titlelike,fg=blue!50!black}
 
 \setbeamertemplate{frametitle}{
+  \vspace{-2.5pt}
   \leavevmode
   \hbox{\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{frametitle}
   \usebeamerfont{frametitle}
@@ -88,6 +89,7 @@
 \frame{\sectionpage}
 \endgroup
 }
+
 
 %%%%%%%%%% footer
 \beamertemplatenavigationsymbolsempty
@@ -260,4 +262,14 @@
     \setlength{\my@beamer@itemsepi}{#1}%
     \setlength{\my@beamer@itemsepii}{#2}%
     \setlength{\my@beamer@itemsepiii}{#3}%
-}
+  }
+
+%\usepackage{xfp} % remove in new versions of LaTeX
+\newsavebox{\tempbox}
+\NewDocumentEnvironment{resize}{m}{%
+  \begin{lrbox}{\tempbox}%
+  \begin{minipage}{\fpeval{1/(#1)}\textwidth}%
+  }{%
+  \end{minipage}\end{lrbox}%
+  \scalebox{#1}{\usebox{\tempbox}}%
+  }

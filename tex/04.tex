@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[aspectratio=64,11pt]{beamer}
+\documentclass[aspectratio=64,12pt]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -23,7 +23,7 @@
 \usepackage{fancybox}
 \usetheme{default}
 \author{Massimo D'Antoni}
-\date{Anno accademico 2023-2024}
+\date{Anno accademico 2024-2025}
 \title{Lo stato fornitore di beni e servizi\newline (beni pubblici e monopolio)}
 \subtitle{Scienza delle Finanze}
 \institute{Università di Siena}
@@ -46,13 +46,11 @@ I beni pubblici \emph{puri} sono caratterizzati da due proprietà:
 Conseguenze:
 \begin{itemize}
 \item la non escludibilità rende impossibile condizionare la fruizione del bene al pagamento di un prezzo;
-\item la non rivalità rende inefficiente l'esclusione quando questa è possibile.
-\end{itemize}
-Nel caso di \emph{fornitura decentrata} o \emph{volontaria} gli individui si comportano da \emph{free-rider}: ciascuno conta sulla fornitura altrui e il livello di bene disponibile risulta inefficientemente basso.
-\begin{itemize}
-\item Nota bene: i beni privati, scambiati sui mercati, sono caratterizzati da \alert{rivalità} ed \alert{escludibilità}.
-\item Vi sono beni che hanno una sola delle due proprietà.
-\end{itemize}
+\item la non rivalità rende inefficiente l'esclusione, anche quando questa è possibile.
+\item Nel caso di \emph{fornitura decentrata} o \emph{volontaria} gli individui si comportano da \emph{free-rider}: ciascuno conta sulla fornitura altrui e il livello di bene disponibile risulta inefficientemente basso.
+\end{itemize}  
+  Nota bene: i beni privati sono \alert{rivali} ed \alert{escludibili} e vi
+  sono beni che hanno una sola delle due proprietà.
 \end{frame}
 
 
@@ -65,7 +63,7 @@ Sono beni pubblici:
 \item il servizio anti-incendi
 \item la manutenzione stradale, l'illuminazione stradale, la polizia urbana
 \item i servizi di informazione, le trasmissioni televisive (escludibili?)
-\item molti beni "immateriali", quali la fiducia reciproca, la condivisione di un linguaggio e di norme comuni
+\item molti beni «immateriali», quali la fiducia reciproca, la condivisione di un linguaggio e di norme comuni
 \item \ldots{}o anche un'equa distribuzione del reddito in una società attenta all'equità
 \end{itemize}
 \emph{Non} sono beni pubblici nel senso indicato:
@@ -73,18 +71,18 @@ Sono beni pubblici:
 \item la sanità
 \item i trasporti
 \end{itemize}
-La non rivalità può essere presente in vari gradi
+La non rivalità può essere presente in vari gradi.
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Precisazioni sulla nozione di bene pubblico}
 \begin{itemize}
-\item Il fatto che ciascuno debba consumare il bene pubblico nella stessa quantità non implica che la valutazione sia per tutti la medesima. Come vedremo, il problema decisionale nasce proprio dalla diversa valutazione del bene pubblico
+\item Gli individui consumano il bene pubblico nella stessa quantità, ma il valore che attribuiscono al bene non sarà in generale la stessa per tutti. Da questa differenza nascono molti dei problemi decisionali.
 \item Le caratteristiche che rendono pubblico un bene possono cambiare con l'innovazione tecnologica (esempio: escludibilità attraverso sistemi di crittazione dell'informazione)
-\item Ci sono beni privati forniti dal pubblico: assistenza sanitaria, servizi di trasporto, istruzione (escludibilità e non rivalità, ma possiamo rintracciare una componente di bene pubblico)
-\item Ci sono beni pubblici forniti dal privato: assistenza sociale da parte di istituzioni caritative, mecenatismo, e -- su scala ridotta -- gestione di proprietà condominiali
-\item Il concetto di bene pubblico è in parte sovrapposto con quello di esternalità (fornendo un bene pubblico genero un'esternalità positiva, gli effetti di alcune esternalità sono non rivali e non escludibii)
+\item Ci sono beni privati forniti dal pubblico: assistenza sanitaria, servizi di trasporto, istruzione sono escludibili e in buona misura rivali (ma possiamo rintracciare elementi di non rivalità).
+\item Ci sono beni pubblici forniti dal privato: assistenza sociale da parte di istituzioni caritative, mecenatismo, e -- su scala ridotta -- gestione di proprietà condominiali.
+\item Il concetto di bene pubblico è in parte sovrapposto con quello di esternalità (fornendo un bene pubblico genero un'esternalità positiva per la collettività).
 \end{itemize}
 \end{frame}
 
@@ -107,7 +105,7 @@ La non rivalità può essere presente in vari gradi
 \begin{itemize}
 \item possono essere forniti privatamente dietro pagamento di un prezzo (\emph{membership}); in presenza di rivalità parziale è possibile una fornitura efficiente
 \end{itemize}
-\item Esempi di risorse comuni: fauna ittica di un lago, sfruttamento di risorse naturali
+\item Esempi di risorse comuni: fauna ittica di un lago, risorse naturali
 \begin{itemize}
 \item può essere visto come un problema di esternalità negativa, il problema è l'eccessivo sfruttamento della risorsa
 \end{itemize}
@@ -119,8 +117,8 @@ La non rivalità può essere presente in vari gradi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Fornitura volontaria e \emph{free-riding}}
 \begin{itemize}
-\item Consideriamo per cominciare il caso in cui la decisione sia tra contribuire (C) e non contribuire (N) alla fornitura del bene pubblico
-\item Il bene pubblico vale 2 se un individuo contribuisce, 4 se contribuiscono entrambi. Il costo di contribuire è 3.
+\item Ciascun individuo deve decidere se contribuire (C) o non contribuire (N) alla fornitura di un bene pubblico. Il costo di contribuire è 3.
+\item Entrambi gli individui ottengono dal bene pubblico un beneficio 2 se un solo individuo contribuisce, 4 se contribuiscono entrambi. 
 \end{itemize}
 \vspace{-6pt}
 \begin{columns}
@@ -135,7 +133,7 @@ La non rivalità può essere presente in vari gradi
 \end{column}
 \end{columns}
 \begin{itemize}
-\item Un modello alternativo: il \emph{weakest link}.  Per avere il bene pubblico è necessario il contributo da parte di \emph{entrambi} gli individui (se uno solo contribuisce non si ha fornitura).
+\item Un modello alternativo (\emph{weakest link}).  Per avere il bene pubblico è necessario il contributo da parte di \emph{entrambi} gli individui, se uno solo contribuisce non si ha fornitura.
 \end{itemize}
 \vspace{-6pt}
 \begin{columns}
@@ -163,9 +161,7 @@ La non rivalità può essere presente in vari gradi
 \begin{column}{.3\columnwidth}
 \small
 \begin{itemize}
-\item Il livello di fornitura efficiente può essere
-individuato in corrispondenza del punto in cui il costo marginale eguaglia
-la somma dei benefici marginali ($\text{CM}=\sum_{h}\text{BM}^{h}$)
+\item Il livello di fornitura efficiente può essere individuato in corrispondenza del punto in cui il costo marginale eguaglia la somma dei benefici marginali ($\text{CM}=\sum_{h}\text{BM}^{h}$)
 \item sommiamo dunque verticalmente le curve di domanda individuali
 \end{itemize}
 \end{column}
@@ -203,25 +199,22 @@ costo marginale (offerta) e curva di domanda di mercato, ottenuta come somma
 \small
 \begin{itemize}
 \item Una derivazione più rigorosa delle condizioni di efficienza, che dobbiamo a
-Samuelson (1954),  fa riferimento ai SMS e SMT
+Samuelson (1954).
 \item Efficienza: occorre trovare $x_{1},x_{2},Y$ che realizzano $\max U^{1}$
-dato livello $U^{2}$
-\item Analisi grafica:
-\begin{itemize}
+dato livello $U^{2}$.
 \item Occorre ricordare che l'inclinazione della frontiera della possibilità
-produttive (FPP) è il SMT
+produttive (FPP) è il SMT.
 \item Fissando l'utilità $U^{2}$ tracciamo per differenza verticale la \emph{curva
-residuale} (inclinaz. = SMT $-$ SMS$^2$)
+residuale} (inclinaz. = SMT $-$ SMS$^2$).
 \item Nel punto di ottimo E si massimizza l'utilità $U^{1}$ data $U^{2}$ e date
-le possibilità produttive
-\end{itemize}
-\item La condizione: $\text{SMS}^{1}+\text{SMS}^{2}=\text{SMT}$
+le possibilità produttive.
 \end{itemize}
 \end{column}
 
 \begin{column}{.5\columnwidth}
 \begin{center}
-\includegraphics[height=7cm]{./figure/samuelson-11.pdf}
+\includegraphics[height=7cm]{./figure/samuelson-11.pdf}\\
+La condizione: $\text{SMS}^{1}+\text{SMS}^{2}=\text{SMT}$.
 \end{center} 
 \end{column}
 \end{columns}
@@ -231,7 +224,7 @@ le possibilità produttive
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Fornitura volontaria e \emph{free riding} nel caso continuo}
 \begin{itemize}
-\item L'unico equilibrio di Nash del "gioco" di fornitura volontaria del bene
+\item L'unico equilibrio di Nash del «gioco» di fornitura volontaria del bene
 pubblico prevede che l'individuo 1 fornisca la sua quantità preferita
 $y^{1}$ e l'individuo 2 non fornisca nulla
 \item la quantità fornita $y^{1}$ è \emph{inferiore} alla quantità efficiente $Y^{*}$
@@ -253,6 +246,7 @@ Con riferimento al grafico della slide precedente, dimostrare che l'\emph{unico}
 equilibrio di Nash è quello in cui l'individuo 2 fornisce $y^{2}$ e
 l'individuo 1 fornisce zero
 \end{block}
+\vspace{-2mm}
 \small
 \begin{itemize}
 \item Qual è la quantità fornita da 1 se 2 fornisce zero?
@@ -261,19 +255,17 @@ quando $y^{1}>y^{2}$?
 \item Qual è la quantità fornita da 1 se 2 fornisce $y^{2}$? È ancora
 ottimale per 2 fornire $y^{2}$ se 1 fornisce una quantità positiva?
 \end{itemize}
+
 \begin{block}{Per i pignoli e/o i curiosi}
 \footnotesize
 \begin{itemize}
 \item Ragionando nell'ipotesi che la curva di domanda di ciascuno sia
   indipendente dalla quantità di bene pubblico fornito dagli altri individui
   stiamo escludendo la presenza di effetti di reddito. A parità di bene
-  pubblico fornito un aumento/riduzione della quantità fornita dagli altri è
-  infatti equivalente ad un aumento/riduzione del reddito disponibile
+  pubblico totale fornito un aumento/riduzione della quantità fornita dagli
+  altri comporta infatti un aumento/riduzione del reddito disponibile
   dell'individuo.
-\item Gli effetti di reddito determinao spostamenti della domanda: l'analisi
-  si complica e può avvenire che in equilibrio sia fornita una quantità
-  positiva da più individui contemporaneamente. Si provi ad illustrare tale
-  caso graficamente.
+\item Come cambierebbe l'analisi volendo tener conto degli effetti di reddito?
 \end{itemize}
 \end{block}
 \end{frame}
@@ -283,27 +275,28 @@ ottimale per 2 fornire $y^{2}$ se 1 fornisce una quantità positiva?
 \begin{itemize}
 \item Il sostegno ai poveri quando gli individui sono altruisti può essere visto
 come un caso di bene pubblico
-\item Gli individui 1 e 2 sono interessati al benessere dell'individuo 3:\\[0pt]
-$U^1(x_1,U^3)$, $U^2(x_2,U^3)$, $U^3(x_3)$
-\item oppure gli individui 1 e 2 sono interessati al fatto che 3 consumi a
-sufficienza di un certo bene primario (salute, istruzione)
-$U^1(x_1,x_3)$, $U^2(x_2,x_3)$, $U^3(x_3)$
-\item 1 e 2 potranno decidere di destinare (tramite donazioni) parte del loro
-reddito al consumo da parte di 3
-\item Ci aspettiamo tuttavia che il livello così fornito sia sub-ottimale
-(inefficientemente basso): utilità e consumo di 3 rappresentano per 1 e 2 un
-bene \emph{non rivale} e \emph{non escludibile}
+\begin{itemize}
+  \item Gli individui 1 e 2 sono interessati al benessere dell'individuo 3:
+$$U^1(x_1,U^3),\quad U^2(x_2,U^3),\quad U^3(x_3)$$
+\item oppure gli individui 1 e 2 sono interessati al fatto che 3 consumi un
+  certo bene primario (salute, istruzione)
+$$U^1(x_1,x_3),\quad U^2(x_2,x_3),\quad U^3(x_3)$$
+\end{itemize}
+\item 1 e 2 potranno decidere di finanziare (tramite donazioni) il consumo di 3
+\item Ci aspettiamo tuttavia che il consumo di 3 così finanziato sia
+inefficientemente basso: utilità e consumo di 3 rappresentano per 1 e 2 un
+bene \emph{non rivale} e \emph{non escludibile}. Avremo dunque \emph{free-riding}.
 \end{itemize}
 
-\begin{block}{Cos'è l'altruismo?}
+\begin{block}{}
 Abbiamo descritto l'altruismo come interesse per il benessere altrui.  Una
-descrizione alternativa è che gli individui traggano utilità dall'atto di
-\emph{donare} qualcosa.  In questo caso, cosa cambia?
+descrizione alternativa è che gli individui traggano \alert{utilità dall'atto in sé di
+donare}.  In questo caso, cosa cambierebbe?
 \end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Fornitura di beni non rivali ma escludibili ("artificialmente scarsi")}
+\begin{frame}{Fornitura di beni non rivali ma escludibili («artificialmente scarsi»)}
 \begin{itemize}
 \item Se l'esclusione è possibile, sarà possibile condizionare il consumo del bene
 al pagamento di un prezzo e quindi finanziare la fornitura del bene
@@ -347,37 +340,31 @@ bene pubblico.
 \begin{frame}{Infrastrutture e servizi pubblici}
 \begin{itemize}
 \item Molte infrastrutture/opere pubbliche hanno le caratteristiche di beni
-pubblici: ponti, strade, interventi contro il dissesto idrogeologico, dighe,
+pubblici: ponti, strade, interventi contro il dissesto idrogeologico,
 ecc.
-\item Anche quando è possibile escludere l'accesso all'infrastruttura e il bene è
-parzialmente rivale, la struttura dei costi può rendere comunque problematico
-l'operare di mercati concorrenziali
-\item Non si parla in questi casi di beni pubblici, ma di \alert{monopolio naturale}
-\begin{itemize}
-\item il problema presenta analogie con quello già visto di un bene non rivale
-ed escludibile fornito da privati
-\item nel linguaggio comune, si parla di "acqua bene pubblico", ma il punto non
-è la risorsa naturale, bensì la realizzazione di infrastrutture per
-portare l'acqua nelle abitazioni
-\end{itemize}
-\item Altri esempi: la rete di fornitura del servizio idrico, servizi "a rete" che
+\item Altri esempi: la rete di fornitura del servizio idrico, servizi «a rete» che
 richiedono rilevanti infrastrutture
+\item Anche quando c'è escludibilità e parziale rivalità, la struttura dei
+  costi può rendere comunque problematico l'operare di mercati concorrenziali
+\item La scala ottimale di produzione è tale da determinare un
+  \alert{monopolio naturale}.
+\item Il problema di finanziare l'infrastruttura presenta analogie con quello
+  già visto di un bene non rivale ed escludibile fornito da privati.
 \item Molte infrastrutture sono realizzate dal pubblico, altre sono realizzate in
 \emph{project financing}: il governo delega a privati la realizzazione di
 un'infrastruttura, che verrà finanziata con i proventi della sua gestione
-(fornitura a pagamento agli utenti)
+(fornitura a pagamento agli utenti).
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Cosa si intende per monopolio naturale}
 \begin{itemize}
-\item Si ha un monopolio naturale quando la concentrazione in un'unica impresa
+\item Si ha un monopolio \alert{naturale} quando la concentrazione in un'unica impresa
 della produzione per l'intero mercato o per un insieme di mercati risulta
-vantaggiosa dal punto di vista dei costi
-\item È dunque la struttura dei costi e non una disposizione di legge (come
-sarebbe in un monopolio \alert{legale}) a determinare l'assetto monopolistico del
-mercato
+vantaggiosa dal punto di vista dei costi.
+\item Nota bene: l'assetto monopolistico dipende dalla struttura dei costi,
+  non una disposizione di legge (come sarebbe in un monopolio \alert{legale}).
 \item La nozione di monopolio naturale coincide con quella di
 \alert{subadditività della funzione di costo}. Se $C(y)$ rappresenta il \alert{minimo}
 costo sostenuto da un'impresa per produrre la quantità $y$ (che può essere
@@ -406,8 +393,8 @@ proporzionalmente rispetto alla quantità prodotta, ovvero:
 \end{equation*}
 \item se il costo medio è decrescente, \alert{il costo marginale è inferiore al costo
 medio} (sapreste dimostrarlo formalmente?)
-\item Nel caso di un'impresa monoprodotto, la presenza di economie di scala
-implica la subadditività della funzione di costo
+\item La presenza di economie di scala
+implica la subadditività della funzione di costo.
 \end{itemize}
 \end{frame}
 
@@ -443,26 +430,23 @@ invece che separatamente (es. condivisione di costi fissi). Formalmente:
 \item Quando posso utilizzare infrastrutture o funzioni comuni per operare in diversi mercati
 \begin{itemize}
 \item Esempio: un servizio postale che utilizza la propria rete di sportelli per
-fornire anche servizi bancari
+fornire anche servizi bancari.
 \end{itemize}
 \item La presenza di economie di scala e di economie di diversificazione implica
-la subadditività della funzione di costo nel caso multiprodotto
+la subadditività della funzione di costo nel caso multiprodotto.
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Quali sono le conseguenze di un monopolio naturale?}
 \begin{itemize}
-\item È inefficiente e spesso inefficace forzare la concorrenza in un contesto
-caratterizzato da economie di scala e economie di diversificazione.
-
+\item È inefficiente (e spesso non attuabile) forzare la concorrenza in un contesto
+caratterizzato da economie di scala ed economie di diversificazione.
 \item Per evitare che il monopolista (privato) spinto dalla ricerca del profitto
-scelga un prezzo inefficientemente alto, occorre \alert{regolare} il mercato o al
-limite \alert{nazionalizzare} l'impresa (trasformare il monopolio privato in
-monopolio pubblico). Le opzioni:
+scelga un prezzo inefficientemente alto, è possibile:
 \begin{itemize}
-\item monopolio privato regolamentato
-\item monopolio pubblico
+\item \alert{regolamentare} il monopolio privato;
+\item \alert{nazionalizzare} il settore e creare un monopolio pubblico.
 \end{itemize}
 
 \item Di seguito ci occuperemo di come regolamentare un monopolista privato, ma
@@ -478,7 +462,7 @@ tariffe nel caso di un monopolio pubblico
 \begin{itemize}
 \item Massimizzazione del profitto:
 \begin{equation*}
-\max_{p} py(p)-[F+cy(p)]
+\max_{p}\; py(p)-[F+cy(p)]
 \end{equation*}
 \item condizioni del I ordine:
 \begin{equation*}
@@ -511,27 +495,25 @@ costo marginale)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Perché l'esercizio di potere monopolistico è inefficiente?}
 \begin{itemize}
-\item \alert{Inefficienza allocativa} (prezzo > costo marginale): alcuni potenziali
-consumatori del bene/servizio non vengono soddisfatti anche se farlo
-comporterebbe costi inferiori al beneficio
+\item \alert{Inefficienza allocativa} (prezzo > costo marginale): alcuni
+  consumatori non accedono al bene/servizio sebbene tale accesso comporti
+  benefici che eccedono i costi.
 \item \alert{Inefficienza-X} (o manageriale): il monopolista ha scarso incentivo a
-contenere i costi. J. Hicks: "The best of all economic rents is quiet life"
+contenere i costi. J. Hicks: «The best of all economic rents is quiet life»
 \end{itemize}
 
-Rispetto al primo problema, possibile immaginare un intervento pubblico nella
-forma di una \alert{regolazione del prezzo}: il governo impone l'applicazione di un
-prezzo inferiore al prezzo di monopolio
-
+Rispetto al primo problema, l'autorità pubblica può \alert{regolare il prezzo}, fissandolo a un livello inferiore al prezzo di monopolio.
 \begin{itemize}
 \item Prezzo pari al \alert{costo medio}: garantisce la copertura dei costi e nessun
 extra-profitto
 \item Prezzo pari al \alert{costo marginale}: impone al monopolista una perdita
 \end{itemize}
 \begin{block}{}
+  \small
 \begin{itemize}
 \item Nella definizione di costo della microeconomia è compreso il \alert{costo del
 capitale}: interessi ma anche quella parte di profitti necessaria a remunerare
-il capitale di rischio (profitto "normale")
+il capitale di rischio (profitto «normale»)
 \item Quando si parla di profitto, si intende extra-profitto (rendita monopolistica)
 \end{itemize}
 \end{block}
@@ -542,24 +524,28 @@ il capitale di rischio (profitto "normale")
 \begin{frame}{È proprio necessario regolamentare un monopolio naturale?}
 \begin{itemize}
 \item Demsetz (1967) mise in dubbio che le economie di scala fossero condizione
-\alert{sufficiente} per regolare il mercato
-\item oltre alla concorrenza \alert{nel} mercato, resa impossibile dalla presenza di
-economie di scala, può operare la concorrenza \alert{per il} mercato
-\item azione disciplinante della minaccia di entrata da parte di nuovi operatori
-\item l'idea è che se ottengo (extra)profitti positivi, spingerò altre imprese ad
-entrare nel mercato, offrendo prezzi più bassi
-\item si parla di \alert{mercato contendibile}
-\begin{itemize}
-\item Una teoria sviluppata a fine anni '70
-\item condizione cruciale è che il monopolista non sia in grado di reagire a
-sua volta all'entrata con sufficiente rapidità
-\item ruolo cruciale dei costi "affondati" (\emph{sunk costs}): l'entrata avverrà
+\alert{sufficiente} per regolare il mercato;
+\item la concorrenza \alert{nel} mercato è resa impossibile dalla presenza di
+economie di scala, ma può esserci concorrenza \alert{per il} mercato;
+\item azione disciplinante della minaccia di entrata da parte di nuovi operatori: se il monopolista ottiene (extra)profitti positivi, spingerà altre imprese a
+entrare nel mercato, offrendo prezzi più bassi;
+\item si parla di \alert{mercato contendibile}.
+\end{itemize}
+\begin{block}{}
+  \small
+  La \alert{teoria del mercati contendibili}, popolare a fine anni
+  '70 e negli anni '80:
+  
+- condizione cruciale è che il monopolista non sia in grado di reagire
+  all'entrata di un concorrente con sufficiente rapidità;
+
+- assumono rilevanza i costi «affondati» (\emph{sunk costs}): l'entrata avverrà
 solo se possibile una concorrenza \emph{hit \& run} in cui a seguito della
-reazione del monopolista l'entrante può uscire senza costi
-\item poco verosimile nella realtà!
-\end{itemize}
-\item L'idea di concorrenza \emph{per il} mercato resta molto influente
-\end{itemize}
+reazione del monopolista l'entrante può uscire senza costi;
+
+- queste condizioni si verificano molto raramente.
+
+\end{block}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -598,12 +584,12 @@ copertura dei costi fissi $F$: è necessario coprire i costi fissi con un sussid
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Politiche tariffarie: tariffa in due parti, menu di tariffe\ldots{}}
 \begin{itemize}
-\item In alcuni casi (quali?) possibile coprire il costo fisso adottando una
+\item In alcuni casi è possibile coprire il costo fisso adottando una
 \alert{tariffa in due parti}. Il prezzo complessivo pagato dal consumatore/utente
 risulta $E^i(p)=E+py^i$ (canone $E$)
 \begin{itemize}
 \item Se $E=F/N$ ($N$ = numero utenze) copriamo interamente i costi fissi.
-\item È ottimale questa soluzione sul piano dell'efficienza e dell'equità? In
+\item È una soluzione in gradi di eliminare l'inefficienza allocativa? In
 generale no, visto che il canone potrebbe scoraggiare gli utenti con bassa
 domanda, spingendoli ad astenersi dal consumo.
 \end{itemize}
@@ -614,7 +600,7 @@ scegliere la tariffa più coerente con il loro livello di domanda: gli
 utenti a bassa domanda scelgono prezzo più alto e canone basso o nullo,
 gli utenti a domanda più elevata scelgono canone più elevato e prezzo più
 basso (al limite pari al costo marginale)
-\item Esempio: 0,15€ con scatto alla risposta oppure tariffa "flat" di 5€/mese
+\item Esempio: 0,15€ con scatto alla risposta oppure tariffa «flat» di 5€/mese
 senza scatto alla risposta
 \end{itemize}
 \end{itemize}
@@ -624,8 +610,8 @@ senza scatto alla risposta
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Il monopolista multiprodotto (o multimercato)}
 \begin{itemize}
-\item Monopolista \alert{multiprodotto}. Se deve essere garantito il pareggio di bilancio, in
-assenza di canone, il vincolo di bilancio è:
+\item Se deve essere garantito il pareggio di bilancio, in assenza di canone,
+  il vincolo di bilancio di un monopolista che opera su due mercati è:
 \begin{equation*}
  p_1y_1+p_2y_2=F+c_1y_1+c_2y_2
 \end{equation*}
@@ -675,9 +661,8 @@ rigida)
 
 \begin{itemize}
 \item La medesima variazione del prezzo determina nei due mercati una diversa variazione dei ricavi e
-della perdita di benessere
-\item Se le domande dei due beni sono indipendenti (il prezzo dell'uno non influenza la domanda dell'altro), l'ottimo è identificato dalla regola
-dell'elasticità inversa:
+della perdita di benessere.
+\item Se le domande dei due beni sono indipendenti (il prezzo dell'uno non influenza la domanda dell'altro), l'ottimo è identificato dalla regola dell'elasticità inversa:
 \begin{equation*}
 \frac{(p_1-c)/p_1}{(p_2-c)/p_2}=\frac{\epsilon_2}{\epsilon_1}
 \end{equation*}
@@ -689,7 +674,7 @@ dell'elasticità inversa:
 \begin{columns}
 \begin{column}{.57\columnwidth}
 \begin{itemize}
-\item Nell'ottimo va eguagliato, per tutti i mercati, il rapporto tra aumento della perdita di benessere e aumento dei ricavi derivanti da un aumento del prezzo $dp_i$
+\item Nell'ottimo deve essere uguale, per tutti i mercati, il rapporto tra l'effetto marginale di un aumento del prezzo sulla perdita di benessere e l'effetto marginale dello stesso aumento sui ricavi:
 \begin{equation*}
   \lambda_i=
   \frac{\textcolor{red!30!white}{\rule{3mm}{3mm}}}{\textcolor{cyan!30!white}{\rule{3mm}{3mm}}-
@@ -714,7 +699,7 @@ dell'elasticità inversa:
 \medskip
 \begin{itemize}
 \item La generalizzazione di questa regola al caso in cui le domande non sono
-indipendenti, per cui occorre tenere conto anche degli effetti "incrociati" tra diversi prezzi, è nota come \alert{regola di Ramsey} (si parla di prezzi o tariffe \emph{à la} Ramsey)
+indipendenti, per cui occorre tenere conto anche degli effetti «incrociati» tra diversi prezzi, è nota come \alert{regola di Ramsey} (si parla di prezzi o tariffe \emph{à la} Ramsey)
 \end{itemize}
 \end{frame}
 
@@ -728,9 +713,9 @@ ecc.
 \item Osserviamo che la discriminazione corrisponde alla strategia ottimale anche
 per un monopolista che vuole massimizzare i profitti.
 \begin{itemize}
-\item La differenza è nel \alert{livello} delle tariffe, che il regolatore vorrebbe
-fissare al minimo compatibile con la copertura dei costi, mentre il
-monopolista vorrebbe fissare in modo da massimizzare i profitti
+\item La differenza è nel \alert{livello} delle tariffe, che il regolatore
+  fissa al minimo compatibile con la copertura dei costi, mentre il
+  monopolista fisserebbe a un livello più alto, in modo da massimizzare i profitti.
 \end{itemize}
 \item Quando diciamo \alert{ottimale} intendiamo \alert{efficiente}
 \begin{itemize}
@@ -752,30 +737,32 @@ molti casi vincitori e perdenti. Il punto è che il guadagno per chi vince
 \begin{frame}{L'informazione del regolatore}
 \begin{itemize}
 \item L'applicazione delle tariffe ottimali richiede la conoscenza delle
-condizioni di domanda e i costi sostenuti dalle imprese regolamentate
+condizioni di domanda e i costi sostenuti dalle imprese regolamentate.
 \item Possiamo pensare alle relazione tra regolatore e impresa regolata come a un
 caso di relazione \alert{principale/agente}, nella quale un certo compito (fornire
 il servizio) è delegato dal principale (la collettività, tramite lo Stato)
 all'agente (l'impresa), ma quest'ultimo gode di un vantaggio informativo.
-\item Nota bene: non basta conoscere il costo effettivamente sostenuto, occorre
-sapere se tale costo sia effettivamente il \alert{minimo costo}.
-\item Il problema è analogo quando riguarda la vendita di beni e servizi
-(es. servizio idrico), ma anche per la fornitura diretta di beni allo Stato
-(\emph{procurement} in campo medico, militare, realizzazione di infrastrutture) e
+\item Nota bene:
+\begin{itemize}
+\item al regolatore/principale non basta conoscere il costo effettivamente
+  sostenuto, occorre sapere se tale costo sia effettivamente il \alert{minimo
+    costo};
+\item non c'è differenza tra regolare il prezzo di vendita di beni e servizi agli utenti
+(es. servizio idrico, trasporti) e fissare il prezzo per la fornitura diretta di beni allo Stato
+(\emph{procurement} in campo medico, militare, realizzazione di infrastrutture) o
 per lo svolgimento di servizi (es. riscossione tributi).
+\end{itemize}
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Una soluzione: l'asta}
 \begin{itemize}
-\item Può essere vista come un modo per realizzare la concorrenza "per il" mercato
-\item È anche un modo per limitare/eliminare lo svantaggio informativo del "principale":
+\item Realizza in effetti la concorrenza «per il» mercato.
+\item È anche un modo per limitare/eliminare lo svantaggio informativo del «principale»:
 \begin{itemize}
-\item per aggiudicarsi l'asta occorre indicare un prezzo inferiore a quello dei
-competitori;
-\item se i partecipanti hanno costi simili, il prezzo dovrà essere vicino al
-minimo costo medio.
+\item se i partecipanti hanno costi simili, il prezzo dichiarato nell'offerta
+  dovrà essere vicino al minimo costo medio.
 \end{itemize}
 \item Il ricorso all'asta non è tuttavia privo di controindicazioni o limiti:
 \begin{itemize}
@@ -785,15 +772,12 @@ minimo costo medio.
 \item Inoltre, l'asta definisce le condizioni di fornitura del servizio, ma tali
 condizioni possono mutare nel tempo:
 \begin{itemize}
-\item come governare la relazione una volta assegnata l'asta? Se l'orizzonte
-temporale è lungo, occorre rinegoziare le condizioni in una situazione in
-cui le due parti (principale e agente) sono vincolate a una relazione di
-monopolio bilaterale;
-\item d'altra parte, aste troppo frequenti possono indurre nel vincitore
-dell'asta un'ottica di breve periodo;
+\item al rinnovo dell'asta, non c'è simmetria tra i partecipanti, il
+  monopolista può godere di un vantaggio rispetto ai competitori, specie se
+  l'asta è infrequente;
+\item d'altra parte, aste troppo frequenti possono indurre il monopolista ad
+  adottare un'ottica di breve periodo;
 \item come regolarsi per gli investimenti a lungo termine?
-\item al rinnovo dell'asta tra i partecipanti le condizioni non sono più
-simmetriche.
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -806,22 +790,21 @@ soluzione adottata, una \alert{diluizione degli incentivi} o la creazione di
 \alert{rendite} in capo al monopolio regolamentato.
 \item Un semplice modellino:
 \begin{itemize}
-\item Ipotizziamo che il regolatore possa osservare il costo di produzione $C$, ma
+\item ipotizziamo che il regolatore possa osservare il costo di produzione $C$, ma
 non sappia se un costo elevato è dovuto a condizioni esogene avverse o a
 inefficienza dell'impresa: $C=\theta-e$, dove $\theta$ può essere alto
-o basso ($\theta_a>\theta_b$).
+o basso ($\theta_a>\theta_b$);
 \item ridurre $e$ è costoso, il livello ottimale $e^*$ sarà realizzato solo se
-ci sono incentivi appropriati a farlo
+ci sono incentivi appropriati a farlo;
 \item all'impresa deve essere garantita la copertura dei costi, altrimenti il
-servizio non sarà fornito
+servizio non sarà fornito.
 \end{itemize}
-\item Consideriamo due possibili "contratti" regolatori, che rappresentando le due
+\item Consideriamo due possibili «contratti» regolatori, le due
 soluzioni estreme al problema dell'asimmetria informativa e degli incentivi:
 \begin{itemize}
-\item \emph{fix price}: prezzo predeterminato, la differenza positiva o negativa sarà
-un profitto o perdita dell'impresa
-\item \emph{cost plus}: prezzo in funzione dei costi sostenuti e osservati $C$, il
-profitto è predeterminato
+\item \emph{fix price}: prezzo predeterminato che prescinde dal valore
+  osservato di $C$.
+\item \emph{cost plus}: prezzo fissato in modo da coprire i costi sostenuti e osservati $C$.
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -829,7 +812,7 @@ profitto è predeterminato
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Schemi regolatori \emph{fix-price} e \emph{cost-plus}}
 \begin{itemize}
-\item Con il \emph{fix-price} scelgo un prezzo fisso $\bar P$, da applicare a
+\item Con il \emph{fix-price} scelgo un prezzo $\bar P$, da applicare a
 prescindere dal valore osservato di $C$:
 \begin{itemize}
 \item il monopolista percepisce un profitto $\bar P - C = \bar P - \theta +
@@ -862,33 +845,31 @@ conveniente se e solo se
 \begin{equation*}
    (1-\pi)(\theta_a-\theta_b)<e^*.
 \end{equation*}
-cioè se il valore atteso della rendita è superiore al costo
-dell'inefficienza produttiva $e^*$
+cioè se il valore atteso della rendita è superiore al risparmio $e^*$ nei
+costi determinato dall'incentivo a produrre in modo efficiente.
 \item La scelta della soluzione \emph{fix-price} risulterà dunque tanto più
 conveniente
 \begin{itemize}
-\item quanto più è probabile che il costo sia alto ($\pi$ alto)
-\item quanto minore è l'impatto della componente esogena del costo ($\theta_a-\theta_b$ basso)
-\item quanto maggiore è la riduzione nei costi $e^*$ determinata dall'incentivo
-all'efficienza
-\item quanto minore è l'avversione al fatto che il monopolista consegua
+\item quanto più è probabile che il costo sia alto ($\pi$ alto);
+\item quanto minore è l'impatto della componente esogena del costo ($\theta_a-\theta_b$);
+\item quanto maggiore è la riduzione nei costi $e^*$ determinata dall'incentivo;
+\item quanto meno problematico è che il monopolista consegua
 una rendita.
 \end{itemize}
-\item Vi saranno casi nei quali è preferibile una soluzione meno incentivante,
-come quella \emph{cost-plus}
-\item Considerando la possibilità di soluzioni intermedie tra \emph{fix-price} e
-\emph{cost-plus}, cercheremo l'ottimo compromesso tra incentivi e riduzione della
-rendita del monopolista
+\item Vi saranno casi nei quali è preferibile la soluzione meno incentivante rappresentata dal \emph{cost-plus}
+\item Una soluzione intermedia tra \emph{fix-price} e
+\emph{cost-plus} può trovare l'ottimo compromesso tra incentivi e riduzione della
+rendita del monopolista.
 \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{La "regolazione incentivante"}
+\begin{frame}{La «regolazione incentivante»}
 \begin{itemize}
 \item \emph{Regolazione tradizionale}
 \begin{itemize}
 \item auditing periodico dei costi
-\item adeguamento "continuo" dei prezzi alla struttura dei costi
+\item adeguamento «continuo» dei prezzi alla struttura dei costi
 \item i guadagni di efficienza passano immediatamente ai consumatori
 \item garanzia di un adeguato tasso di profitto al monopolista
 \item incentivo ad investire (aumentano i profitti riconosciuti), temperato da
@@ -897,15 +878,15 @@ valutazione da parte del regolatore
 \item \emph{Regolazione incentivante}
 \begin{itemize}
 \item tetti predeterminati ai prezzi (\emph{price cap})
-\item adozione di formula "rigida" di adeguamento dei prezzi, con allineamento
+\item adozione di formula «rigida» di adeguamento dei prezzi, con allineamento
 ogni $n$ anni
 \item aumenti di efficienza si traducono in profitti per l'impresa (che possono
-essere maggiori o minori del profitto "normale")
+essere maggiori o minori del profitto «normale»)
 \item incentivo ad investire per aumentare l'efficienza, ma spesso prevale
 un'ottica di breve periodo (vedi riallineamento periodico, rinnovo
 concessione\ldots{})
 \end{itemize}
-\item È evidente l'analogia tra regolazione incentivante e schemi \emph{fix-price}
+\item È evidente l'analogia tra regolazione incentivante e schemi \emph{fix-price}.
 \end{itemize}
 \end{frame}
 
@@ -928,14 +909,13 @@ parziale o totale)
 \item A partire dagli anni '80 e '90 tendenza alla privatizzazione di molti
 servizi nei paesi dell'Europa occidentale. Le ragioni:
 \begin{itemize}
-\item cambiamenti tecnologici che hanno modificato le condizioni di monopolio
-naturale
-\item maggiore attenzione all'efficienza rispetto agli obiettivi di garanzia di
-accesso universale e finalità redistributive
-\item prevalenza di un orientamento pro-mercato e favorevole alle soluzioni
-concorrenziali
-\item pressioni di bilancio, spinta a "fare cassa" tramite vendita di proprietà
-pubblica
+\item cambiamenti tecnologici (minore incidenza delle economia di scala);
+\item ragioni «ideologiche»: maggiore attenzione all'efficienza rispetto agli
+  obiettivi di garanzia di accesso universale e finalità redistributive;
+  l'emergere di un orientamento pro-mercato e favorevole alle soluzioni
+  di mercato;
+\item pressioni di bilancio, spinta a «fare cassa» tramite vendita di proprietà
+pubblica.
 \end{itemize}
 \end{itemize}
 \end{frame}
@@ -952,12 +932,12 @@ apertura alla concorrenza
 di alcuni segmenti di mercato, dis-integrazione verticale rispetto alla
 precedente struttura verticalmente integrata
 \end{itemize}
-\item "Il privato è più efficiente". Vale anche quando l'impresa privata opera in
+\item «Il privato è più efficiente». Vale anche quando l'impresa privata opera in
 condizioni di monopolio?
 \begin{itemize}
 \item La motivazione del profitto spinge gli azionisti a monitorare maggiormente
 l'operato del management.
-\item Il "mercato della proprietà" e il rischio di scalata ostile o di
+\item Il «mercato della proprietà» e il rischio di scalata ostile o di
 fallimento rappresentano fattori di disciplina. L'impresa pubblica è
 soggetta a un \emph{soft budget constraint}.
 \end{itemize}
@@ -970,11 +950,11 @@ causa-effetto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{A favore della produzione pubblica}
 \begin{itemize}
-\item Non tutte le attività sono "privatizzabili". Ma dove collochiamo il confine?
+\item Non tutte le attività sono «privatizzabili». Ma dove collochiamo il confine?
 \item In astratto, possiamo spingere l'impresa orientata al profitto ad agire
 nell'interesse collettivo specificando in modo dettagliato i termini e la
-"qualità" del servizio desiderato.
-\item Nella realtà, tale specificazione è difficile, il "contratto" tra regolatore
+«qualità» del servizio desiderato.
+\item Nella realtà, tale specificazione è difficile, il «contratto» tra regolatore
 e regolato è necessariamento \emph{incompleto}
 \item L'\alert{incompletezza contrattuale} può rendere in molti casi la soluzione
 pubblica preferibile, quando alcune dimensioni del servizio non sono ben
@@ -985,10 +965,6 @@ soluzione adeguata
 l'indeterminatezza degli obiettivi si traduce in un \emph{soft budget
 constraint}.
 \end{itemize}
-\item Per limitare le occasioni di intervento discrezionale dello Stato (o ente
-locale) sono state spesso istituite delle autorità (\emph{authority}) settoriali (A. per
-l'energia elettrica e il gas, A. di regolazione dei trasporti,
-ecc.). L'autorità è dotata di autonomia e opera con un mandato definito.
 \end{itemize}
 \end{frame}
 
@@ -997,18 +973,36 @@ ecc.). L'autorità è dotata di autonomia e opera con un mandato definito.
 \begin{itemize}
 \item Hart-Shleifer-Vishny (1997) considerano il caso delle prigioni americane:
 \begin{itemize}
-\item obiettivo multidimensionale ("qualità" che comprende il rispetto dei
-diritti umani dei carcerati) non definibile in un contratto
+\item obiettivo multidimensionale («qualità» che comprende il rispetto dei
+diritti umani dei carcerati) non definibile in un contratto;
 \item l'applicazione di incentivi troppo forti al risparmio spinge a
-privilegiare le dimensioni "verificabili" rispetto a quelle "non
-verificabili" (un problema generale di ogni schame di incentivi, sollevato
-anche da Holmstrom)
+privilegiare le dimensioni «verificabili» rispetto a quelle «non
+verificabili» (un problema generale di ogni schama di incentivi);
 \item vi sono casi in cui è meglio rinunciare a minimizzare i costi se non si è
 sicuri che questo non comprometta altri obiettivi rilevanti.
 \end{itemize}
 \item La produzione pubblica (no delega ai privati) garantisce in molti casi un
-migliore bilanciamento quando alcuni degli obiettivi non sono "verificabili"
+migliore bilanciamento quando alcuni degli obiettivi non sono «verificabili»
 e quindi non sono contrattabili con sufficiente precisione
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Le \emph{authority} di settore}
+
+\begin{itemize}
+\item Per limitare le occasioni di intervento discrezionale dello Stato
+  (o ente locale) sono state spesso istituite delle autorità
+  (\emph{authority}) settoriali. In Italia:
+\begin{itemize}
+\item A. per l'energia elettrica e il gas (1995), poi A. di Regolazione
+  per Energia Reti e Ambiente, ARERA;
+\item A. per le garanzie nelle telecomunicazioni, AGCOM (1997);
+\item A. di regolazione dei trasporti (2011);
+\end{itemize}
+\item Le autorità operano in modo autonomo nell'interesse pubblico, con un
+  mandato molto più definito rispetto alle istituzioni di governo nazionale e
+  territoriale.
 \end{itemize}
 \end{frame}
 \end{document}

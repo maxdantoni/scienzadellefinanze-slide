@@ -1,5 +1,5 @@
 % Intended LaTeX compiler: xelatex
-\documentclass[aspectratio=64,11pt]{beamer}
+\documentclass[aspectratio=64,12pt]{beamer}
 \usepackage{graphicx}
 \usepackage{longtable}
 \usepackage{wrapfig}
@@ -20,7 +20,7 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 \usetheme{default}
 \author{Massimo D'Antoni}
-\date{2023-2024}
+\date{2024-2025}
 \title{Le imposte}
 \subtitle{Scienza delle Finanze}
 \hypersetup{
@@ -33,31 +33,36 @@
 
 \section{Una visione di insieme}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Classificazione delle imposte}
 Nel Conto consolidato delle pubbliche amministrazioni le entrate correnti si distinguono in:
+% DATI ISTAT Conto economico per sottosettore
+% Conti nazionali > Conti e aggregati economici delle Pubbliche Amministrazioni >
+% Conto annuale
 
 \begin{table}[H]\footnotesize
 \begin{tabularx}{\linewidth}{lRRR}
     \toprule
   ENTRATE &miliardi di €&\% PIL &\% Entrate\tabularnewline
   \midrule
-Produzione vendibile e per uso proprio &44,0  &2,5  &5,1\tabularnewline
-Imposte dirette  &258,3  &14,5  &30.1\tabularnewline
-Imposte indirette  &267,3  &15,0  &31,2\tabularnewline
-Contributi sociali  &245,0  &13,8  &28,6\tabularnewline
-Altre entrate correnti  &35,2  &2,0  &4,1\tabularnewline
+Produzione vendibile e per uso proprio &49,6  &2,4  &5,0\tabularnewline
+Imposte indirette  &294,7  &14,1  &29,6\tabularnewline
+Imposte dirette  &320,8  &15,4  &32,2\tabularnewline
+Contributi sociali  &269,2  &12,9  &27,0\tabularnewline
+Altre entrate correnti  &35,2  &1,8  &3,8\tabularnewline
 \midrule
-Entrate correnti  &849,9  &47,7  &99,2\tabularnewline
-Entrate in c/capitale  &7,2  &0,4  &0,8\tabularnewline
+Entrate correnti  &972,6  &46,6  &97,6\tabularnewline
+Entrate in c/capitale  &23,9  &1,1  &2,4\tabularnewline
 \midrule
-Totale entrate  &857,1  &48,1  &100,0\tabularnewline
+Totale entrate  &996,6  &47,8  &100,0\tabularnewline
 \bottomrule
-\multicolumn{4}{r}{Anno: 2021}
+\multicolumn{4}{r}{Dati ISTAT. Anno: 2023}
 \end{tabularx}
 \end{table}
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Classificazione nella contabilità nazionale}
 \begin{itemize}
 \item \emph{Tax} = prelievi operati dalle P.A
@@ -81,24 +86,24 @@ o ammontare della prestazione
 \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Classificazione «tradizionale» italiana}
 La classificazione «tradizionale» italiana presenta alcune differenze:
 \begin{itemize}
-\item Le \alert{imposte dirette} colpiscono manifestazioni immediate della capacità
-contributiva, quali la percezione di un reddito o il possesso di un
-patrimonio. Si usa distinguerle a loro volta in
+\item Le \alert{imposte dirette} colpiscono manifestazioni immediate della
+  capacità contributiva quali la percezione di un reddito o il possesso di un
+  patrimonio. Si usa distinguerle a loro volta in
 \begin{itemize}
 \item imposte \alert{personali}, il cui ammontare dipende da caratteristiche
-soggettive del contribuente (es. livello complessivo del reddito,
-condizione familiare)
+soggettive del contribuente (ad es. livello complessivo del reddito,
+condizione familiare);
 \item imposte \alert{reali}, il cui ammontare dipende solo dall'oggetto dell'imposta
-(categoria di reddito o patrimonio)
+(categoria di reddito o patrimonio).
 \end{itemize}
 \item le \alert{imposte indirette} colpiscono manifestazioni mediate della capacità
 contributiva, quali il consumo o scambio di un bene o servizio o il
-trasferimento di una proprietà patrimoniale
-\item le \alert{tasse} sono tributi corrisposti a fronte di un bene/servizio di cui
-beneficia sia il richiedente che la collettività (es. tasse scolastiche)
+trasferimento di una proprietà patrimoniale.
+\item le \alert{tasse} sono tributi corrisposti a fronte di un bene/servizio di cui beneficiano il richiedente e la collettività (es. tasse scolastiche).
 \end{itemize}
 
 \begin{block}{}
@@ -106,16 +111,18 @@ Nella classificazione italiana, che ritroviamo in molti documenti ufficiali anch
 \end{block}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Composizione della pressione fiscale}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth]{./figure/classificazione-imposte-oecd-color.pdf}
+\includegraphics[width=\textwidth]{./figure/classificazione-imposte-oecd-color-2023.pdf}
 \end{figure}
 
 \vspace{-3mm}
-Il peso delle diverse categorie di imposte nei paesi OCSE (2019)
+Il peso delle diverse categorie di imposte nei paesi OCSE (2023)
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Evoluzione della struttura dei sistemi fiscali nel tempo}
 \begin{figure}[htbp]
 \centering
@@ -124,74 +131,78 @@ Il peso delle diverse categorie di imposte nei paesi OCSE (2019)
 
 Evoluzione nel tempo:
 \begin{itemize}
-\item crescita del peso dei contributi sociali
-\item sostituzione di imposte speciali con imposte generali sul consumo (IVA)
-\item andamento prima crescente poi decrescente delle imposte sul reddito
+\item crescita del peso dei contributi sociali;
+\item sostituzione di imposte speciali con imposte generali sul consumo (IVA);
+\item andamento prima crescente poi decrescente delle imposte sul reddito.
 \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Le imposte italiane per tipologia e il loro gettito}
-\vspace{-3mm}
-\footnotesize
+\begin{resize}{.7}
 \begin{center}
 \begin{tabular}{llrr}
  &  &  & mld €\\[0pt]
 \hline
-imposte & \alert{Irpef} (Imposta sul reddito delle persone fisiche) &  & 191,6\\[0pt]
-dirette & \emph{di cui: ritenute su lavoro dipendente e pensioni} & \emph{157,4} & \\[0pt]
-erariali & \alert{Ires} (Imposta sul reddito delle società) &  & 33,6\\[0pt]
- & \alert{Isos} (Imposta sostitutiva sui redditi di capitale) &  & 11,0\\[0pt]
- & Altre imposte dirette &  & 16,0\\[0pt]
+imposte & \alert{Irpef} (Imposta sul reddito delle persone fisiche) &  & 221,6\\[0pt]
+dirette & \emph{di cui: ritenute su lavoro dipendente e pensioni} & \emph{180,9} & \\[0pt]
+erariali & \alert{Ires} (Imposta sul reddito delle società) &  & 51,7\\[0pt]
+ & \alert{Isos} (Imposta sostitutiva sui redditi di capitale) &  & 10,0\\[0pt]
+ & Altre imposte dirette &  & 34.7\\[0pt]
 \hline
-imposte & \alert{Iva} (Imposta sul valore aggiunto) &  & 136,9\\[0pt]
-indirette & Imposte su prodotti energetici (incl. gas e elettricità) &  & 32,3\\[0pt]
-erariali & Lotto, lotterie e giochi &  & 14,6\\[0pt]
- & Imposta sui tabacchi &  & 10,6\\[0pt]
- & Altre sugli affari (registro, bollo, assicurazione, RAI) &  & 25.0\\[0pt]
+imposte & \alert{Iva} (Imposta sul valore aggiunto) &  & 174,9\\[0pt]
+indirette & Imposte su prodotti energetici (incl. gas e elettricità) &  & 31,2\\[0pt]
+erariali & Lotterie e altri giochi &  & 6,9\\[0pt]
+ & Imposta sui tabacchi &  & 11,0\\[0pt]
+ & Altre sugli affari (registro, bollo, assicurazione, RAI) &  & 26.5\\[0pt]
 \hline
-imposte & \alert{Irap} (Imposta regionale sulle attività produttive) &  & 25,2\\[0pt]
-locali & \alert{Imu} (Imposta municipale unica) &  & 16,3\\[0pt]
- & \alert{Tasi} (Tassa servizi indivisibili Comuni) &  & 1,2\\[0pt]
- & Addizionali Irpef comunali e regionali &  & 16,9\\[0pt]
+imposte & \alert{Irap} (Imposta regionale sulle attività produttive) &  & 30,1\\[0pt]
+locali & \alert{Imu} (Imposta municipale unica) &  & 18,1\\[0pt]
+ & \alert{Tasi} (Tassa servizi indivisibili Comuni) &  & 0,1\\[0pt]
+ & Addizionali Irpef comunali e regionali &  & 19,5\\[0pt]
  &  &  & \\[0pt]
 \end{tabular}
 \end{center}
-\tiny Fonte: \href{https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/entrate\_tributarie\_2019/Bollettino-entrate-Dicembre2019.pdf}{→ Bollettino delle entrate tributarie dic 2019}
-
-\small
+\vspace{-3mm}
+{\footnotesize Fonte: \href{https://www.finanze.gov.it/export/sites/finanze/.galleries/Documenti/entrate_tributarie_2023/Bollettino-entrate-Dicembre2023.pdf}{→ Bollettino delle entrate tributarie dic 2023}}
+\end{resize}
 \begin{itemize}
-\item manca un'imposta patrimoniale erariale di dimensione significativa
-(l'imposta di successione svolge un ruolo trascurabile)
+\item È assente un'imposta patrimoniale erariale di dimensione significativa
+(l'imposta di successione svolge un ruolo trascurabile);
 \item classificazione tra imposte dirette/indirette dubbia in certi casi: Irap, Imu
 \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Elementi che descrivono l'imposta}
+\begin{resize}{.95}
 \begin{itemize}
 \item \alert{Soggetto passivo}, su cui ricade l'obbligo di pagamento del
-tributo. L'analisi economica distingue tra \alert{incidenza legale} dell'imposta
-(chi è «percosso» dall'imposta, ovvero è giuridicamente è tenuto al pagamento) e \alert{incidenza economica} (chi ne sopporta effettivamente l'onere)
+tributo. 
 \begin{itemize}
-\item un aspetto importante è l'individuazione dei fattori che determinano la
-\alert{traslazione} dell'imposta dal soggetto percosso a quello
-economicamente inciso
+\item Distinguiamo tra \alert{incidenza legale} (chi è giuridicamente è tenuto
+  al pagamento dell'imposta) e \alert{incidenza economica} (chi ne sopporta
+  effettivamente l'onere);
+\item è importante individuare i fattori che determinano la
+  \alert{traslazione} dell'imposta da un soggetto all'altro.
 \end{itemize}
-\item \alert{Presupposto}: il fatto o le circostanze da cui nasce l'obbligo al pagamento
-dell'imposta
-\item \alert{Base imponibile}: la grandezza o valore cui si commisura l'imposta, determinata in termini monetari o fisici (imposta \alert{specifica})
+\item \alert{Presupposto}: il fatto o la circostanza da cui nasce l'obbligo al pagamento
+dell'imposta.
+\item \alert{Base imponibile}: la grandezza o valore cui si commisura l'imposta, determinata in termini monetari o fisici (imposta \alert{specifica}).
 \item \alert{Aliquota}: percentuale o importo da applicare alla base imponibile per
 ottenere l'ammontare dell'imposta
 \end{itemize}
 
-\footnotesize
 \begin{block}{}
 \alert{Esempio: l'IMU (Imposta Municipale Unica):} Presupposto è il possesso di un'immobile. Soggetto passivo il proprietario o
 titolare di diritto reale. Base imponibile è la rendita catastale rivalutata
 moltiplicata per un coefficiente a seconda della tipologia
 dell'immobile. L'aliquota è 0,40\% nel caso di abitazione principale ecc.
 \end{block}
+\end{resize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'aliquota: rapportata a una quantità o ad un valore?}
 \begin{itemize}
 \item Imposte \alert{specifiche} e \alert{ad valorem}, le prime commisurate alla quantità
@@ -201,7 +212,7 @@ fisica, le seconde espresse in percentuale di un valore monetario
 imposta & gettito & esborso finale\\[0pt]
 \hline
 specifica & $T = t\cdot q$ & $(p+t)\cdot q$\\[0pt]
-ad valorem & $T = t\cdot p\cdot q$ & $(1+t)\cdot p\cdot q$\\[0pt]
+\emph{ad valorem} & $T = t\cdot p\cdot q$ & $(1+t)\cdot p\cdot q$\\[0pt]
 \end{tabular}
 \end{center}
 \item Imposte \alert{generali} (esempio: sulla generalità degli scambi) e \alert{speciali}
@@ -214,7 +225,9 @@ oli minerali
 \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Imposta su base lorda o su base netta}
+\begin{resize}{.95}  
 \begin{itemize}
 \item Occorre fare attenzione alle aliquote che si applicano sul prezzo al lordo
 (\emph{tax inclusive}) o al netto dell'imposta stessa (\emph{tax exclusive})
@@ -229,15 +242,18 @@ oli minerali
 \tau_L =\frac{\tau_N}{1+\tau_N} \qquad\tau_N =\frac{\tau_L}{1-\tau_L}.
 \end{equation*}
 \begin{itemize}
-\item Un esempio di prelievo sia su base lorda che su base netta sono i contributi pensionistici (vedi lezione su pensioni): per il datore di lavoro sono base netta, per il lavoratore sono su base lorda.
+\item Nota bene: i contributi pensionistici sono su base netta per il datore
+  di lavoro, su base lorda per il lavoratore.
 \end{itemize}
 \begin{block}{}
 \footnotesize
 \alert{ESERCIZIO}. I contributi pensionistici sono commisurati alla retribuzione lorda e sono pari al 23,81\% (su base netta) per il datore di lavoro e al 9,19\% (su base lorda) per il lavoratore. A parità di gettito, quale dovrebbe essere l'aliquota nell'ipotesi di contributi interamente su base lorda o interamente su base netta?
 \end{block}
+\end{resize}
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Aliquota media e marginale}
 \begin{itemize}
 \item \alert{Aliquota media:} definita come il rapporto $T/B$ fra l'imposta e la base imponibile.
@@ -248,18 +264,21 @@ funzione $T(B)$ che descrive l'imposta sia derivabile, l'aliquota
 marginale è rappresentata matematicamente dalla derivata prima $T'(B)$.
 \end{itemize}
 \end{itemize}
+\bigskip
 
+\begin{resize}{.9}
 \begin{block}{}
-\footnotesize
-\alert{ESEMPIO}. Un'imposta con aliquota del 20\% applicata sulla base imponibile che eccede i 10.000 euro.
+\alert{ESEMPIO}. Un'imposta con aliquota del 20\% applicata sulla base imponibile che eccede i 10.000 euro (ovvero in presenza di una deduzione di 10.000 euro).
 \begin{itemize}
 \item L'aliquota marginale è 20\% al di sopra del 10.000 (è zero al di sotto di tale soglia)
 \item L'aliquota media su una base $B$ è $0,2(B-10.000)/B$, dunque è crescente in $B$
 \end{itemize}
 \end{block}
+\end{resize}
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Il disegno di un sistema fiscale}
 Il disegno di un sistema fiscale nasce e si sviluppa in base alla
 risposta che viene data ad alcune questioni di fondo:
@@ -282,6 +301,7 @@ si generano o quando si manifestano con flussi finanziari?
 
 \section{Le relazioni tra le imposte}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Una visione di insieme}
 \begin{figure}[htbp]
 \centering
@@ -289,49 +309,50 @@ si generano o quando si manifestano con flussi finanziari?
 \end{figure}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'equivalenza degli effetti delle imposte}
 \begin{itemize}
 \item Il reddito può essere tassato sul lato delle fonti o su quello degli usi.
 \item Come in altri casi, l'effetto può essere valutato con riferimento al vincolo
 del consumatore
-\item Un'imposta sul reddito: $x=(1-t)z$.
-\item Un'imposta sulla generalità dei consumi (es. IVA): $x(1+\tau)=z$.
+\item Un'imposta sul reddito: $\sum_ip_ix_i=(1-t)z$.
+\item Un'imposta sulla generalità dei consumi (es. IVA): $\sum_i(1+\tau)p_ix_i=z$.
 Dividendo:
 \begin{equation*}
-   x = \frac{z}{1+\tau}
+   \sum_ip_ix_i = \frac{z}{1+\tau}
 \end{equation*}
 \item C'è equivalenza se:
 \begin{equation*}
    1-t = \frac{1}{1+\tau} \quad\text{ovvero: }t = \frac{\tau}{1+\tau}
 \end{equation*}
-\item Dunque: un'imposta uniforma sui consumi del 20\% equivale a un'imposta
-(proporzionale) sul reddito del 16,67\%
+\item Dunque: un'imposta uniforme sui consumi del 20\% equivale a un'imposta
+(proporzionale) sul reddito del 16,67\%.
 \end{itemize}
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'incidenza economica: chi paga realmente un'imposta?}
 \begin{itemize}
 \item L'analisi dell'incidenza economica individua chi sostiene effettivamente
-l'onere economico dell'imposta, al di là di chi è legalmente tenuto al
-pagamento dell'imposta
+l'onere economico dell'imposta.
 \item Il confronto è tra i \alert{prezzi relativi} di equilibrio con e senza l'imposta:
 l'imposta aumenta il prezzo pagato dall'acquirente e riduce il prezzo
-ottenuto dal venditore, in misure variabili
-\item Attraverso variazioni dei prezzi, l'imposta può essere traslata dal
+ottenuto dal venditore, in misure variabili.
+\item Attraverso le variazioni dei prezzi, l'imposta è traslata dal
 contributente di diritto \alert{in avanti} (sugli acquirenti del bene), \alert{indietro}
-(sui fornitori di fattori produttivi)
+(sui fornitori di fattori produttivi).
 \item L'analisi può essere condotta:
 \begin{itemize}
 \item in \alert{equilibrio parziale}, astraendo dagli effetti che il mutato equilibrio
 nel mercato ove è applicata l'imposta determina su altri mercati, e quindi
-dai possibili \emph{feedback} sul mercato stesso
-\item in \alert{equilibrio generale}, tenendo conto degli effetti sugli altri mercati:
-analisi estremamente complessa, difficoltà di ottenere risultati univoci
+dai possibili \emph{feedback} sul mercato stesso;
+\item in \alert{equilibrio generale}, tenendo conto degli effetti sugli altri mercati.
 \end{itemize}
 \end{itemize}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'incidenza di un'imposta specifica su un bene di consumo /1}
 \begin{columns}
 \begin{column}{.5\columnwidth}
@@ -348,6 +369,7 @@ In assenza di imposta: chiamiamo $q$ il prezzo per l'acquirente, $p$ il prezzo p
 \end{columns}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{L'incidenza di un'imposta specifica su un bene di consumo}
 \begin{columns}
 \begin{column}{.5\columnwidth}
@@ -368,18 +390,22 @@ Un'imposta $\vartheta$ a carico dei venditori
 \end{figure}
 \end{column}
 \end{columns}
-
-N.B. Stiamo ipotizzando un'accisa, ovvero un'imposta con aliquota commisurata alla quantità fisica scambiata.
+\medskip
+N.B. Lo spostamento delle curve in parallelo caratterizza l'imposta specifica (accisa)
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Cosa determina l'equilibrio?}
 \begin{columns}
 \begin{column}{.45\columnwidth}
 A parità di $\vartheta$, ai fini degli effetti finali per il venditore e per
 l'acquirente, è irrilevante il fatto che l'imposta sia legalmente a carico
-dell'uno o dell'altro.  Ciò che conta è l'elasticità delle curve di domanda e
-offerta
+dell'uno o dell'altro.
+\smallskip
+
+Ciò che conta ai fini della ripartizione del peso dell'imposta è l'elasticità
+delle curve di domanda e offerta.
 \end{column}
 
 \begin{column}{.5\columnwidth}
@@ -392,12 +418,13 @@ offerta
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Il ruolo dell'elasticità}
 \begin{itemize}
-\item Il fatto che il peso ricada sul lato domanda o sul lato offerta dipende
-dall'elasticità relativa delle due curve
-\item maggiore elasticità significa mobilità e disponibilità di sostituti non
-tassati
+\item Dove ricada il peso dell'imposta dipende
+dall'elasticità relativa delle due curve di domanda e offerta;
+\item maggiore elasticità significa mobilità e disponibilità di beni sostituti non
+tassati, dunque maggiore possibilità di sfuggire all'imposta.
 \end{itemize}
 
 \begin{columns}
@@ -418,14 +445,16 @@ tassati
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{I casi estremi}
 \begin{itemize}
-\item I casi estremi in cui una delle curve è perfettamente rigida o perfettamente elastica
-\item Esempio di offerta rigida: beni non riproducibili (es. suolo)
-\begin{itemize}
-\item L'offerta può essere ridida nel breve ma più elastica nel lungo periodo
+\item I casi estremi in cui una delle curve è perfettamente rigida o perfettamente elastica.
+\item Esempio di offerta rigida: beni non riproducibili (es. suolo).
+  \begin{itemize}
+  \item N.B. L'offerta può essere ridida nel breve ma più elastica nel lungo
+    periodo.
 \end{itemize}
-\item Esempio di offerta elastica: un fattore perfettamente mobile
+\item Esempio di offerta elastica: un fattore perfettamente mobile.
 \end{itemize}
 
 \begin{columns}
@@ -447,80 +476,88 @@ tassati
 
 \section{Perché tanta complessità nei sistemi fiscali?}
 
-\begin{frame}{Pluralità di obiettivi}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{1. Pluralità di obiettivi}
 Le principali finalità delle imposte:
 \begin{itemize}
-\item Gettito per finanziare la spesa
-\item Finalità redistributive
+\item Gettito per finanziare la spesa.
+\item Finalità redistributive.
 \end{itemize}
 Non bastano le principali imposte (imposta sul reddito e IVA)?
 \begin{itemize}
 \item Esigenze di gettito immediato (es. imposta sulla benzina utilizzata in più
-occasioni per ottenere gettito)
-\item Esigenze redistributive, a complemento dell'imposta sul reddito
+occasioni per ottenere gettito).
+\item Esigenze redistributive, a complemento dell'imposta sul reddito:
 \begin{itemize}
 \item tassare i beni complementari al tempo libero può essere un modo per
-ridurre l'effetto distorsivo dell'imposta sul reddito
+ridurre l'effetto distorsivo dell'imposta sul reddito.
 \end{itemize}
-\item Imposte finalizzate a correggere esternalità
+\item Imposte finalizzate a correggere esternalità:
 \begin{itemize}
-\item anche «sin taxes», come imposta su tabacchi, alcolici e \emph{sugar tax}
+\item anche «sin taxes», come imposta su tabacchi, alcolici e \emph{sugar tax}.
 \end{itemize}
-\item Discriminazione qualitativa dei redditi
+\item Discriminazione qualitativa dei redditi.
 \end{itemize}
 \end{frame}
-\begin{frame}{I vincoli all'applicazione delle imposte}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{frame}{2. Vincoli che condizionano il perseguimento degli obettivi}
+  \begin{resize}{1.2}
+    \begin{itemize}
+\item Effetti disincentivanti dell'imposta.
 \begin{itemize}
-\item Effetti disincentivanti dell'imposta
-\begin{itemize}
-\item Come già detto, gli effetti disincentivanti delle principali imposte
+\item Gli effetti disincentivanti delle principali imposte
 possono essere attenuati con imposizione mirata su beni
-complementari/sostituti rispetto al tempo libero/al lavoro
+complementari/sostituti rispetto al tempo libero/al lavoro.
 \end{itemize}
-\item Pianificazione fiscale (\emph{elusione})
+\item Pianificazione fiscale (\emph{elusione}).
 \begin{itemize}
-\item Sfrutta differenze di trattamento fiscale tra diverse tipologie di base
+\item Sfrutta le differenze di trattamento fiscale tra diverse tipologie di base
 imponibile, tra contribuenti, o dovute alla dimensione della base
-imponibile
+imponibile.
 \end{itemize}
-\item Evasione fiscale
+\item Evasione fiscale.
 \end{itemize}
+\end{resize}
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Pianificazione fiscale (elusione)}
 \begin{enumerate}
-\item Spostare il reddito sui contribuenti con aliquote effettive più basse:  
+\item Spostare il reddito sui contribuenti con aliquote effettive più basse. Esempi:  
 \begin{itemize}
-\item imprenditore che trasferire parte del reddito della società al coniuge
-assumendolo come dipendente,
-\item genitore che trasferire parte del rendimento del proprio risparmio ai
-figli trasferendo a questi la proprietà o i diritti reali di godimento di
-attività reali o finanziarie
-\item società localizzata in un paese ad alta fiscalità potrebbe trasferire
-parte del proprio reddito alla controllante localizzata in un paradiso
-fiscale attraverso il pagamento di corrispettivi per la fornitura di beni
-e servizi o per dei finanziamenti.
+\item l'imprenditore che trasferisce parte del reddito della società al coniuge
+  assumendolo come dipendente;
+\item il genitore che trasferisce ai figli la proprietà o i diritti reali di
+  godimento di attività reali o finanziarie;
+\item la società operante in un paese ad alta fiscalità che trasferisce parte
+  del proprio reddito alla controllante con sede in un paradiso fiscale.
 \end{itemize}
 \item Modificare la qualificazione giuridica del reddito:
 \begin{itemize}
 \item per un contribuente che è contemporaneamente socio e amministratore della
 società, il compenso come amministratore è reddito di lavoro mentre la
-quota dell’utile è reddito di capitale
-\item Interessi, dividendi, plusvalenze
+quota dell’utile è reddito di capitale;
+\item interessi, dividendi, plusvalenze.
 \end{itemize}
 \item Posticipare il momento in cui l’imposta è dovuta.
 \end{enumerate}
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}{Il contrasto all'elusione}
 \begin{itemize}
-\item Con norme specifiche che cercando di limitare specifici abusi
-\item Con soluzioni generali, ad esempio GAAR (\emph{general anti-abuse rule}), che gli
-stati UE devono adottare in forza della Anti Tax Avoidance Directive
-del 2016.
-\item In Italia sono considerate elusione e quindi sanzionate le «operazioni prive
-di sostanza economica che, pur nel rispetto formale delle norme fiscali,
-realizzano essenzialmente vantaggi fiscali indebiti.»
+\item Con norme specifiche che cercando di limitare specifici abusi.
+\item Con soluzioni generali, ad esempio GAAR (\emph{general anti-abuse
+    rule}), richieste in UE della Anti Tax Avoidance Directive del 2016.
+\item In Italia sono considerate elusione e quindi sanzionate le «operazioni
+  prive di sostanza economica che, pur nel rispetto formale delle norme
+  fiscali, realizzano essenzialmente vantaggi fiscali indebiti.»
 \begin{itemize}
-\item Si considerano \alert{operazioni prive di sostanza economica} «i fatti, gli atti
+\item Sono \alert{operazioni prive di sostanza economica} «i fatti, gli atti
 e i contratti, anche tra loro collegati, inidonei a produrre effetti
 significativi diversi dai vantaggi fiscali»
 \item Sono \alert{vantaggi fiscali indebitamente conseguiti} «i benefici, anche non
@@ -533,34 +570,53 @@ funzionale dell'impresa o dell'attività professionale del contribuente.»
 \end{itemize}
 \end{itemize}
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{L'evasione fiscale}
+  \begin{itemize}
+\item Si definisce evasione un comportamento \emph{illegale} mirante a ridurre o eliminare il prelievo fiscale (ad es. omessa o infedele dichiarazione).
+\item L'entità dell'evasione in Italia è quantificata nella \emph{Relazione
+    sull'economia non osservata e sull'evasione fiscale e contributiva}
+  redatta da una commissione del MEF.
+\item Indicatore utilizzato è il \emph{tax gap}, differenza tra gettito e gettito
+«teorico»
+\end{itemize}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{./figure/tax-gap.png}
+\end{center}  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Evasione fiscale: analisi formale}
 Semplice modello di scelta razionale
 \begin{itemize}
 \item $z$ reddito effettivo e $\hat{z}$ reddito dichiarato, con $0\le\hat{z}\le z$
 \item $\pi$ probabilità di accertamento; l'accertamento comporta una sanzione
-$\theta$ proporzionale al reddito evaso $z-\hat{z}$
+$\gamma$ proporzionale al reddito evaso $z-\hat{z}$
 \item Dunque, evadere è una scommessa:
 \begin{itemize}
-\item il contribuente ottiene $x_A=z-t\hat{z}-\theta t(z-\hat z)$ se accertamento
-\item ottiene $x_N=z-t\hat{z}$ senza accertamento
-\item Riscriviamo le due quantità come:\\[0pt]
-$x_A=(1-t)z-t\theta(z-\hat z)$ \\[0pt]
-$x_N=(1-t)z+t(z-\hat z)$
-\item se neutrale sceglie $\hat z$ per massimizzare: $\pi x_A + (1-\pi) x_N$
+\item in caso di accertamento il reddito netto del contribuente sarà $x_A=(1-t)z-t\gamma(z-\hat z)$;
+\item senza accertamento, sarà $x_N=z-t\hat{z} = (1-t)z+t(z-\hat z)$.
+\item se neutrale al rischio, sceglie $\hat z$ per massimizzare: $\pi x_A + (1-\pi) x_N$;
 \item se avverso al rischio sceglie $\hat z$ in modo da massimizzare l'utilità attesa: $\pi
-    u(x_A)+(1-\pi)u(x_N)$
+    u(x_A)+(1-\pi)u(x_N)$.
 \end{itemize}
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Evasione fiscale: rappresentazione grafica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Evasione fiscale: analisi formale /2}
 \begin{columns}
 \begin{column}{.45\columnwidth}
 \begin{itemize}
-\item il vincolo ha espressione $x_N=-\theta x_A+(1-t)(1+\theta)z$
+\item Con $\hat{z}=z$ abbiamo: $x_N(z)=x_A(z)=(1-t)z$;
+\item con $\hat{z}=0$ abbiamo $x_N(0)=z$ e $x_A(0)=(1-t(1+\gamma))z$;
+\item al variare di $\hat{z}$ individuiamo il vincolo di espressione $x_N=(1-t)(1+\gamma)z-\gamma x_A$\\
+  (il segmento in figura);
 \item ottimale non evadere se
-$$ -\text{SMS}=-\frac{1-\pi}{\pi} >-\theta $$
-cioè se $\theta$ o $\pi$ sono sufficientemente elevati
+$$ -\text{SMS}=-\frac{1-\pi}{\pi} >-\gamma $$
+cioè se $\gamma$ o $\pi$ sono sufficientemente elevati.
 \end{itemize}
 \end{column}
 \begin{column}{.55\columnwidth}
@@ -572,16 +628,19 @@ cioè se $\theta$ o $\pi$ sono sufficientemente elevati
 \end{frame}
 
 
-\begin{frame}{Evasione fiscale: rappresentazione grafica}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Evasione fiscale: analisi formale /3}
 \begin{columns}
 \begin{column}{.45\columnwidth}
 \begin{itemize}
-\item Il vincolo ha espressione $x_N=-\theta x_A+(1-t)(1+\theta)z$
-\item l'equilibrio è in E dove
+\item Se invece $\gamma$ e $\pi$ tali che:
+$$ -\text{SMS}=-\frac{1-\pi}{\pi} <-\gamma $$
+l'equilibrio è in E dove
 \begin{equation*}
- \text{SMS} = - \frac{u'(x_N)}{u'(x_A)}\frac{1-\pi}{pi}=\theta
+ -\text{SMS} = -\frac{u'(x_N)}{u'(x_A)}\frac{1-\pi}{\pi}=-\gamma.
 \end{equation*}
-\item effetto di $z$ e $t$? Un aumento di $t$ e una riduzione di $z$ spostano verso il basso il vincolo di bilancio lasciando invariata la pendenza. Non è ovvio, dal modello, che un aumento di $t$ aumenti l'evasione
+\item Quale l'effetto di $z$ e $t$?\\ Un aumento di $t$ e una riduzione di $z$ spostano verso il basso il vincolo di bilancio lasciando invariata la pendenza.
+  \item Non è dunque ovvio, dal modello, che un aumento di $t$ aumenti l'evasione.
 \end{itemize}
 \end{column}
 \begin{column}{.55\columnwidth}
@@ -592,19 +651,7 @@ cioè se $\theta$ o $\pi$ sono sufficientemente elevati
 \end{columns}
 \end{frame}
 
-\begin{frame}{Quantificazione dell'evasione fiscale}
-\begin{itemize}
-\item \emph{Relazione sull'economia non osservata e sull'evasione fiscale e
-contributiva} redatta da una commissione del MEF
-\item Indicatore utilizzato è il \emph{tax gap}, differenza tra gettito e gettito
-«teorico»
-\end{itemize}
-
-\begin{center}
-\includegraphics[width=.9\linewidth]{./figure/tax-gap.png}
-\end{center}  
-\end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Ruolo delle sanzioni}
 \begin{itemize}
 \item L'esperienza italiana non sembra confermare la tesi che sanzioni elevate
@@ -629,11 +676,60 @@ finanziari)
 \end{itemize}
 \end{frame}
 
+\begin{frame}
+  \frametitle{3. La natura incrementale delle riforme fiscali}
+
+  \begin{resize}{1.1}
+    \begin{itemize}
+    \item Un'ulteriore fonte di complessità è la stratificazione di riforme che
+      possono rispondere a visioni differenti o a esigenze contingenti.
+    \item Difficile realizzare operazioni di razionalizzazione o di riforma
+      complessiva del sistema fiscale.
+    \end{itemize}
+  \end{resize}
+\end{frame}
+
 \section{L'evoluzione del sistema fiscale italiano}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Il peso delle diverse categorie di imposta: evoluzione 1965-2020}
 \begin{center}
-\includegraphics[width=\textwidth]{./figure/evoluzione-struttura-imposte-ITA-color.pdf}
+\includegraphics[width=\textwidth]{./figure/evoluzione-struttura-imposte-ITA-2022-color.pdf}
 \end{center}
 \end{frame}
+
+\begin{frame}{Le riforme fiscali dagli anni Sessanta in poi}
+  \begin{description}
+  \item[Anni Sessanta:] prevalenza delle imposte indirette, tra cui l'IGE; imposte dirette in prevalenza reali (imposta di ricchezza mobile); imposte fondiarie; imposta complementare progressiva sul reddito.
+\smallskip
+    Istituita la «Commissione Cosciani» per elaborare una riforma complessiva del sistema fiscale.
+    
+  \item[Anni Settanta:] riorganizzazione del sistema fiscale, attorno a IRPEF,
+    IRPEG e IVA. Imposte introdotte nel 1973-1974; acquistano preminenti le
+    imposte dirette personali e le imposte indirette generali rispetto a
+    quelle speciali.
+
+    Aumento del gettito dell'IRPEF negli anni successivi, per effetto anche
+    dell'inflazione e del \emph{fiscal drag}.
+  \end{description}
+\end{frame}
+
+\begin{frame}{Le riforme fiscali dagli anni Sessanta in poi /2}
+  \begin{description}
+    
+  \item[Anni Novanta e primi Duemila:] nuove sfide poste dalla liberalizzazione dei movimenti di capitale in un contesto di riduzione delle imposte a livello internazionale. Due fasi di riforma:
+    \begin{itemize}
+    \item Riforma Visco (1997): obiettivi di semplificazione, neutralità nelle
+      scelte di investimento, ampiamento della base imponibile. Realizzati
+      attraverso l'armonizzazione delle aliquote sui redditi di capitale, la
+      tassazione delle plusvalenze, l'introduzione dell'IRAP, la tassazione
+      duale del reddito societario.
+    \item Riforme Berlusconi-Tremonti (2001-2004): depotenziamento e abolizione di alcune delle novità introdotte dalla riforma Visco; riforma tassazione societaria (IRES). 
+    \end{itemize}
+  \item[Dal 2010 in poi:] In conseguenza della crisi finanziaria e delle politiche di austerità, aumento del prelievo (specialmente su immobili e IVA); interventi su categorie individuali di reddito, proliferazione dei regimi sostitutivi.
+    
+  \end{description}
+
+\end{frame}
+
 \end{document}
